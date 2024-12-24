@@ -5,7 +5,7 @@ const Navigation = () => {
         <nav className="navbar navbar-expand-lg navbar-light">
             <div className="container-fluid d-flex justify-content-between align-items-center">
                 <div>
-                    <a className="navbar-brand fs-3 fw-bold" href="/" style={{ color: '#1A453C' }}>
+                    <a className="navbar-brand fs-3 fw-bold" href="/">
                         LankaEstate
                     </a>
                 </div>
@@ -14,17 +14,17 @@ const Navigation = () => {
                     <ul className="navbar-nav mx-auto fw-bold">
                         <li className="nav-item px-3">
                             <a className="nav-link" style={{ color: '#1A453C' }} href="/">
-                                SALES
+                                Sales
                             </a>
                         </li>
                         <li className="nav-item px-3">
                             <a className="nav-link" style={{ color: '#1A453C' }} href="/">
-                                RENTALS
+                                Rentals
                             </a>
                         </li>
                         <li className="nav-item px-3">
                             <a className="nav-link" style={{ color: '#1A453C' }} href="/">
-                                CONTACT US
+                                Contact us
                             </a>
                         </li>
                     </ul>
