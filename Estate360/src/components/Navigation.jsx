@@ -2,50 +2,57 @@ import React from 'react';
 
 const Navigation = () => {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <nav className="navbar navbar-expand-lg navbar-light">
             <div className="container-fluid d-flex justify-content-between align-items-center">
                 <div>
-                    <a className="navbar-brand fs-3 fw-bold" href="/">
+                    <a className="navbar-brand fs-3 fw-bold" href="/" style={{ color: '#1A453C' }}>
                         LankaEstate
                     </a>
                 </div>
 
                 <div className="collapse navbar-collapse justify-content-center" id="navbarContent">
-                    <ul className="navbar-nav mx-auto">
+                    <ul className="navbar-nav mx-auto fw-bold">
                         <li className="nav-item px-3">
-                            <a className="nav-link" href="/">
+                            <a className="nav-link" style={{ color: '#1A453C' }} href="/">
                                 SALES
                             </a>
                         </li>
                         <li className="nav-item px-3">
-                            <a className="nav-link" href="/">
+                            <a className="nav-link" style={{ color: '#1A453C' }} href="/">
                                 RENTALS
                             </a>
                         </li>
                         <li className="nav-item px-3">
-                            <a className="nav-link" href="/">
+                            <a className="nav-link" style={{ color: '#1A453C' }} href="/">
                                 CONTACT US
                             </a>
                         </li>
                     </ul>
                 </div>
 
-                <div className="d-flex align-items-center">
-                    <a href="/" className="text-decoration-none text-dark d-flex align-items-center">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="20"
-                            height="20"
-                            fill="currentColor"
-                            className="bi bi-house-heart-fill"
-                            viewBox="0 0 16 16"
-                        >
-                            <path d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.707L8 2.207 1.354 8.853a.5.5 0 1 1-.708-.707z" />
-                            <path d="m14 9.293-6-6-6 6V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5zm-6-.811c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.691 0-5.018" />
-                        </svg>
-                        <span className="ms-2">MY WISHLIST</span>
-                    </a>
-                </div>
+                <button
+                    className="btn rounded-circle"
+                    style={{ backgroundColor: '#1A453C', padding: '0.5rem 1rem' }}
+                    aria-label="Add to wishlist"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        className="text-white wishlist-icon bi bi-heart-fill"
+                        viewBox="0 0 16 16"
+                    >
+                        <path
+                            fillRule="evenodd"
+                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                        />
+                    </svg>
+                    {/* <span className="ms-2 fw-bold text-white d-none d-md-inline">
+                        My wishlist
+                    </span> */}
+                </button>
+
             </div>
         </nav>
     );
