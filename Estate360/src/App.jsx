@@ -1,14 +1,14 @@
-import './../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
+import './App.css'; // Import your main stylesheet
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navigation from './components/Navigation';
 
 function App() {
-
   return (
-    <>
-      <button className="btn btn-warning p-3 m-5">hahaha</button>
-    </>
-
-
-  )
+    <div>
+      <Navigation />
+    </div>
+  );
 }
 
-export default App
+export default App;

@@ -1,0 +1,164 @@
+{
+    "properties": [
+        {
+            "id": "prop1",
+            "type": "House",
+            "bedrooms": 3,
+            "price": 750000,
+            "tenure": "Freehold",
+            "description": "Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station...",
+            "location": "Petts Wood Road, Petts Wood, Orpington BR5",
+            "picture": "images/prop1pic1small.jpg",
+            "url": "properties/prop1.html",
+            "added": {
+                "month": "October",
+                "day": 12,
+                "year": 2022
+            }
+        },
+        {
+            "id": "prop2",
+            "type": "Flat",
+            "bedrooms": 2,
+            "price": 399995,
+            "tenure": "Freehold",
+            "description": "Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat...",
+            "location": "Crofton Road, Orpington BR6",
+            "picture": "images/prop2pic1small.jpg",
+            "url": "properties/prop2.html",
+            "added": {
+                "month": "September",
+                "day": 14,
+                "year": 2022
+            }
+        },
+        {
+            "id": "prop3",
+            "type": "House",
+            "bedrooms": 4,
+            "price": 650000,
+            "tenure": "Leasehold",
+            "description": "A spacious four-bedroom house with a large garden, located near excellent schools and transport links...",
+            "location": "High Street, Bromley BR1",
+            "picture": "images/prop3pic1small.jpg",
+            "url": "properties/prop3.html",
+            "added": {
+                "month": "January",
+                "day": 20,
+                "year": 2023
+            }
+        },
+        {
+            "id": "prop4",
+            "type": "Flat",
+            "bedrooms": 1,
+            "price": 275000,
+            "tenure": "Freehold",
+            "description": "A cozy one-bedroom flat perfect for first-time buyers, close to shops and public transport...",
+            "location": "London Road, Croydon CR0",
+            "picture": "images/prop4pic1small.jpg",
+            "url": "properties/prop4.html",
+            "added": {
+                "month": "March",
+                "day": 15,
+                "year": 2023
+            }
+        },
+        {
+            "id": "prop5",
+            "type": "House",
+            "bedrooms": 5,
+            "price": 1200000,
+            "tenure": "Freehold",
+            "description": "A luxury five-bedroom detached home with a swimming pool and landscaped garden...",
+            "location": "Queens Avenue, Finchley N3",
+            "picture": "images/prop5pic1small.jpg",
+            "url": "properties/prop5.html",
+            "added": {
+                "month": "June",
+                "day": 10,
+                "year": 2023
+            }
+        },
+        {
+            "id": "prop6",
+            "type": "Flat",
+            "bedrooms": 3,
+            "price": 450000,
+            "tenure": "Leasehold",
+            "description": "Modern three-bedroom flat with a balcony offering stunning city views, located near Canary Wharf...",
+            "location": "Docklands, London E14",
+            "picture": "images/prop6pic1small.jpg",
+            "url": "properties/prop6.html",
+            "added": {
+                "month": "July",
+                "day": 8,
+                "year": 2023
+            }
+        },
+        {
+            "id": "prop7",
+            "type": "House",
+            "bedrooms": 2,
+            "price": 310000,
+            "tenure": "Leasehold",
+            "description": "Charming two-bedroom cottage with a fireplace and original features, ideal for couples...",
+            "location": "Station Road, Hayes UB3",
+            "picture": "images/prop7pic1small.jpg",
+            "url": "properties/prop7.html",
+            "added": {
+                "month": "August",
+                "day": 21,
+                "year": 2023
+            }
+        },
+        {
+            "id": "prop8",
+            "type": "Flat",
+            "bedrooms": 4,
+            "price": 875000,
+            "tenure": "Freehold",
+            "description": "Stunning four-bedroom penthouse apartment with a private terrace and concierge service...",
+            "location": "Park Lane, Mayfair W1K",
+            "picture": "images/prop8pic1small.jpg",
+            "url": "properties/prop8.html",
+            "added": {
+                "month": "September",
+                "day": 3,
+                "year": 2023
+            }
+        },
+        {
+            "id": "prop9",
+            "type": "House",
+            "bedrooms": 3,
+            "price": 550000,
+            "tenure": "Freehold",
+            "description": "A charming three-bedroom house with a modern kitchen and a spacious backyard...",
+            "location": "Elm Road, Kingston KT2",
+            "picture": "images/prop9pic1small.jpg",
+            "url": "properties/prop9.html",
+            "added": {
+                "month": "October",
+                "day": 10,
+                "year": 2023
+            }
+        },
+        {
+            "id": "prop10",
+            "type": "Flat",
+            "bedrooms": 2,
+            "price": 325000,
+            "tenure": "Leasehold",
+            "description": "Two-bedroom flat in a quiet residential area, with nearby amenities and great transport connections...",
+            "location": "Green Lane, Epsom KT18",
+            "picture": "images/prop10pic1small.jpg",
+            "url": "properties/prop10.html",
+            "added": {
+                "month": "November",
+                "day": 5,
+                "year": 2023
+            }
+        }
+    ]
+}
