@@ -3,7 +3,7 @@ function Carousel() {
         <section className="container py-5 px-4 fixed-section">
             <h2 className="fw-semibold">Featured Projects</h2>
             <br />
-            <div id="hero-carousel" className="carousel slide" data-bs-ride="carousel">
+            <div id="hero-carousel" className="carousel slide shadow" data-bs-ride="carousel">
                 <div className="carousel-indicators">
                     <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>

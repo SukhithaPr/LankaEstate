@@ -1,7 +1,7 @@
 function Hero() {
     return (
         <section className="container p-4">
-            <div className="row rounded-3 min-vh-60" style={{ backgroundColor: '#f4f8f9' }}>
+            <div className="row rounded-3 min-vh-60 shadow" style={{ backgroundColor: '#f4f8f9' }}>
                 <div className="col-md-6 d-flex flex-column justify-content-center p-5 gap-3">
                     <h1 className="display-4 fw-semibold">
                         Find Your Dream Home Today
@@ -9,7 +9,7 @@ function Hero() {
                     <p>
                         Discover exceptional properties tailored to your needs. Whether you're buying or renting, we're here to guide you every step of the way. Start your journey to the perfect home now!
                     </p>
-                    <a href="/shop"
+                    <a href="#btn-shopnow"
                         className="btn btn-m btn-success fw-semibold align-self-start">
                         Shop Now
                     </a>

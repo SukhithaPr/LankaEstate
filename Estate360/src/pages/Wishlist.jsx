@@ -2,7 +2,7 @@ import React from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
-const Sales = () => {
+const Wishlist = () => {
     return (
         <div>
             <Navigation />
@@ -11,4 +11,4 @@ const Sales = () => {
     );
 };
 
-export default Sales;
+export default Wishlist;

@@ -22,27 +22,27 @@ const Navigation = () => {
                 <div className="collapse navbar-collapse" id="navbarContent">
                     <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <Link to="../components/Sales" className="nav-link px-3 fw-semibold" href="/sales">
+                            <Link to="/Sales" className="nav-link px-3 fw-semibold" href="/sales">
                                 Sales
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="" className="nav-link px-3 fw-semibold" href="/rentals">
+                            <Link to="/Rentals" className="nav-link px-3 fw-semibold" href="/rentals">
                                 Rentals
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="" className="nav-link px-3 fw-semibold" href="/contact">
+                            <Link to="/Contact" className="nav-link px-3 fw-semibold" href="/contact">
                                 Contact us
                             </Link>
                         </li>
                     </ul>
                     
                     <div>
-                        <a href="/list-property" className="btn btn-outline-success fw-semibold">
+                        <Link to="/Wishlist" className="btn btn-outline-success fw-semibold shadow">
                             <i className="bi bi-suit-heart me-1"></i>
                             Wishlist
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

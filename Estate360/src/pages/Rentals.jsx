@@ -1,9 +1,12 @@
+import React from 'react';
+import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
+
 const Rentals = () => {
     return(
         <div>
-            <h1>Rentals</h1>
-            <p>For any inquiries, please contact us at:</p>
-            <p>Email: example@example.com</p>
+            <Navigation />
+            <Footer />
         </div>
     );
 };

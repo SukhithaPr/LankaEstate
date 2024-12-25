@@ -3,10 +3,10 @@ import React from 'react';
 function Properties() {
     return (
         <section className="container px-4 fixed-section">
-            <h2 className="fw-semibold">Trending</h2>
+            <h2 className="fw-semibold" id='btn-shopnow'>Trending</h2>
             <br />
             <div className="d-flex gap-4 justify-content-center">
-                <div className="card" style={{ width: '18rem' }}>
+                <div className="card shadow-sm" style={{ width: '18rem' }}>
                     <img
                         src="https://www.homelandsskyline.lk/uploads/1704873349747-greendale-slide_01%20(1).webp"
                         className="card-img-top"
@@ -20,7 +20,7 @@ function Properties() {
                         <a href="#" className="btn btn-success bg-success">More info</a>
                     </div>
                 </div>
-                <div className="card" style={{ width: '18rem' }}>
+                <div className="card shadow-sm" style={{ width: '18rem' }}>
                     <img
                         src="https://www.homelandsskyline.lk/uploads/1710232397542-Artboard%204.jpg"
                         className="card-img-top"
@@ -34,7 +34,7 @@ function Properties() {
                         <a href="#" className="btn btn-success bg-success">More info</a>
                     </div>
                 </div>
-                <div className="card" style={{ width: '18rem' }}>
+                <div className="card shadow-sm" style={{ width: '18rem' }}>
                     <img
                         src="https://www.homelandsskyline.lk/uploads/1704872215663-image_01_villa_for_sale_in_kahathuduwa_new.webp"
                         className="card-img-top"
@@ -49,7 +49,7 @@ function Properties() {
                         <a href="#" className="btn btn-success bg-success">More info</a>
                     </div>
                 </div>
-                <div className="card" style={{ width: '18rem' }}>
+                <div className="card shadow-sm" style={{ width: '18rem' }}>
                     <img
                         src="https://www.homelandsskyline.lk/uploads/1704871770660-image_01_house_for_sale_in_kahathuduwa_new%20(1).webp"
                         className="card-img-top"
