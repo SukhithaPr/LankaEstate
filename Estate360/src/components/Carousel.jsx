@@ -17,7 +17,7 @@ function Carousel() {
                     <div className="carousel-item active c-item">
                         <img src="https://www.homelandsskyline.lk/uploads/1709179862395-Greendale_Retirement_Apartments%20(1).jpg" className="d-block w-100 c-img" alt="Slide 1" />
                         <div class="carousel-caption d-none d-md-block">
-                            <h1>GREENDALE RETIREMENT RESORT APARTMENT FOR SALE IN ATHURUGIRIYA</h1>
+                            <h1 className="shadow-md">GREENDALE RETIREMENT RESORT APARTMENT FOR SALE IN ATHURUGIRIYA</h1>
                         </div>
                     </div>
 

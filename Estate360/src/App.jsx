@@ -1,21 +1,22 @@
 import './App.css';
 import React from 'react';
+import { Routes, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import Navigation from './components/Navigation';
-import Hero from './components/Hero';
-import Carousel from './components/Carousel';
-import Footer from './components/Footer';
-import Properties from './components/Properties';
+import Home from './pages/Home';
+import About from './pages/Sales';
+import Services from './pages/Rentals';
+import Contact from './pages/Contact';
 
 function App() {
   return (
     <div>
-      <Navigation />
-      <Hero />
-      <Carousel />
-      <Properties />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/sales" element={<Sales />} />
+        <Route path="/rentals" element={<Rentals />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </div>
   );
 }
