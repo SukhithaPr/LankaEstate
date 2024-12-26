@@ -2,7 +2,7 @@ import React from 'react';
 import Navigation from '../components/Navigation';
 import Hero from '../components/Hero';
 import Carousel from '../components/Carousel';
-import Properties from '../components/Properties';
+import Trending from '../components/Trending';
 import Footer from '../components/Footer';
 
 function Home() {
@@ -11,7 +11,7 @@ function Home() {
             <Navigation />
             <Hero />
             <Carousel />
-            <Properties />
+            <Trending />
             <Footer />
         </div>
     );
