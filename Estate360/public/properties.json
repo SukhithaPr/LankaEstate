@@ -2,13 +2,13 @@
     "properties": [
         {
             "id": "prop1",
-            "title": "Charming Family Home in Petts Wood",
+            "title": "2 Bedroom apartment for sale",
             "type": "House",
-            "bedrooms": 3,
-            "price": 750000,
+            "bedrooms": 2,
+            "price": 118000000,
             "tenure": "Freehold",
             "description": "Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station...",
-            "location": "Petts Wood Road, Petts Wood, Orpington BR5, Colombo 00300, Sri Lanka",
+            "location": "Tangalle",
             "picture": "images/prop1pic1small.jpg",
             "url": "properties/prop1.html",
             "added": {
