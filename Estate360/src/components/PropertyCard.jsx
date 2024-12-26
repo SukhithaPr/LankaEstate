@@ -10,9 +10,12 @@ function PropertyCard({ type, title, bedrooms, price, tenure, description, locat
                 style={{ height: '200px', objectFit: 'cover', borderTopLeftRadius: '0.5rem', borderTopRightRadius: '0.5rem' }}
             />
             <div className="card-body">
-                <h5 className="card-title" style={{ fontSize: '1.25rem', fontWeight: 'bold' }}>
+                <h5
+                    className="card-title"
+                    style={{ fontSize: '1.25rem', fontWeight: 'bold' }}>
                     {title}
                 </h5>
+
 
                 <div className="d-flex justify-content-between align-items-center mb-3">
                     <span className="badge bg-primary">{bedrooms} Bedrooms</span>

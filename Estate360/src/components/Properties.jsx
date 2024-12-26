@@ -1,21 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import PropertyCard from './PropertyCard';
 
-function Properties() {
-    const [properties, setProperties] = useState([]);
-
-    useEffect(() => {
-        fetch('/properties.json')
-            .then((response) => {
-                if (!response.ok) {
-                    throw new Error('Failed to fetch properties data');
-                }
-                return response.json();
-            })
-            .then((data) => setProperties(data.properties))
-            .catch((error) => console.error('Error fetching properties:', error));
-    }, []);
-
+function Properties({ properties }) {
     return (
         <div className="container py-4">
             {properties.length > 0 ? (
@@ -25,6 +11,7 @@ function Properties() {
                             <PropertyCard
                                 id={el.id}
                                 type={el.type}
+                                title={el.title}
                                 bedrooms={el.bedrooms}
                                 price={el.price}
                                 tenure={el.tenure}
@@ -38,7 +25,7 @@ function Properties() {
                     ))}
                 </div>
             ) : (
-                <p className="text-center text-muted">Loading properties...</p>
+                <p className="text-center text-muted">No properties match the selected filters.</p>
             )}
         </div>
     );
