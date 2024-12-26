@@ -2,12 +2,13 @@
     "properties": [
         {
             "id": "prop1",
+            "title": "Charming Family Home in Petts Wood",
             "type": "House",
             "bedrooms": 3,
             "price": 750000,
             "tenure": "Freehold",
             "description": "Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station...",
-            "location": "Petts Wood Road, Petts Wood, Orpington BR5",
+            "location": "Petts Wood Road, Petts Wood, Orpington BR5, Colombo 00300, Sri Lanka",
             "picture": "images/prop1pic1small.jpg",
             "url": "properties/prop1.html",
             "added": {
@@ -18,12 +19,13 @@
         },
         {
             "id": "prop2",
+            "title": "Modern Garden Flat in Crofton Road",
             "type": "Flat",
             "bedrooms": 2,
             "price": 399995,
             "tenure": "Freehold",
             "description": "Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat...",
-            "location": "Crofton Road, Orpington BR6",
+            "location": "Crofton Road, Orpington BR6, Colombo 00300, Sri Lanka",
             "picture": "images/prop2pic1small.jpg",
             "url": "properties/prop2.html",
             "added": {
@@ -34,12 +36,13 @@
         },
         {
             "id": "prop3",
+            "title": "Spacious Family Home in Bromley",
             "type": "House",
             "bedrooms": 4,
             "price": 650000,
             "tenure": "Leasehold",
             "description": "A spacious four-bedroom house with a large garden, located near excellent schools and transport links...",
-            "location": "High Street, Bromley BR1",
+            "location": "High Street, Bromley BR1, Kandy 20000, Sri Lanka",
             "picture": "images/prop3pic1small.jpg",
             "url": "properties/prop3.html",
             "added": {
@@ -50,12 +53,13 @@
         },
         {
             "id": "prop4",
+            "title": "Charming One-Bedroom Flat in Croydon",
             "type": "Flat",
             "bedrooms": 1,
             "price": 275000,
             "tenure": "Freehold",
             "description": "A cozy one-bedroom flat perfect for first-time buyers, close to shops and public transport...",
-            "location": "London Road, Croydon CR0",
+            "location": "London Road, Croydon CR0, Colombo 00300, Sri Lanka",
             "picture": "images/prop4pic1small.jpg",
             "url": "properties/prop4.html",
             "added": {
@@ -66,12 +70,13 @@
         },
         {
             "id": "prop5",
+            "title": "Luxury Five-Bedroom Detached Home in Finchley",
             "type": "House",
             "bedrooms": 5,
             "price": 1200000,
             "tenure": "Freehold",
             "description": "A luxury five-bedroom detached home with a swimming pool and landscaped garden...",
-            "location": "Queens Avenue, Finchley N3",
+            "location": "Queens Avenue, Finchley N3, Galle Face Road, Colombo 00300, Sri Lanka",
             "picture": "images/prop5pic1small.jpg",
             "url": "properties/prop5.html",
             "added": {
@@ -82,12 +87,13 @@
         },
         {
             "id": "prop6",
+            "title": "Modern Three-Bedroom Flat in Docklands",
             "type": "Flat",
             "bedrooms": 3,
             "price": 450000,
             "tenure": "Leasehold",
             "description": "Modern three-bedroom flat with a balcony offering stunning city views, located near Canary Wharf...",
-            "location": "Docklands, London E14",
+            "location": "Docklands, London E14, Colombo 00300, Sri Lanka",
             "picture": "images/prop6pic1small.jpg",
             "url": "properties/prop6.html",
             "added": {
@@ -98,12 +104,13 @@
         },
         {
             "id": "prop7",
+            "title": "Charming Two-Bedroom Cottage in Hayes",
             "type": "House",
             "bedrooms": 2,
             "price": 310000,
             "tenure": "Leasehold",
             "description": "Charming two-bedroom cottage with a fireplace and original features, ideal for couples...",
-            "location": "Station Road, Hayes UB3",
+            "location": "Station Road, Hayes UB3, Kandy 20000, Sri Lanka",
             "picture": "images/prop7pic1small.jpg",
             "url": "properties/prop7.html",
             "added": {
@@ -114,12 +121,13 @@
         },
         {
             "id": "prop8",
+            "title": "Luxury Penthouse in Mayfair",
             "type": "Flat",
             "bedrooms": 4,
             "price": 875000,
             "tenure": "Freehold",
             "description": "Stunning four-bedroom penthouse apartment with a private terrace and concierge service...",
-            "location": "Park Lane, Mayfair W1K",
+            "location": "Park Lane, Mayfair W1K, Colombo 00300, Sri Lanka",
             "picture": "images/prop8pic1small.jpg",
             "url": "properties/prop8.html",
             "added": {
@@ -130,12 +138,13 @@
         },
         {
             "id": "prop9",
+            "title": "Charming Three-Bedroom House in Kingston",
             "type": "House",
             "bedrooms": 3,
             "price": 550000,
             "tenure": "Freehold",
             "description": "A charming three-bedroom house with a modern kitchen and a spacious backyard...",
-            "location": "Elm Road, Kingston KT2",
+            "location": "Elm Road, Kingston KT2, Galle Face Road, Colombo 00300, Sri Lanka",
             "picture": "images/prop9pic1small.jpg",
             "url": "properties/prop9.html",
             "added": {
@@ -146,17 +155,188 @@
         },
         {
             "id": "prop10",
+            "title": "Two-Bedroom Flat in Epsom",
             "type": "Flat",
             "bedrooms": 2,
             "price": 325000,
             "tenure": "Leasehold",
             "description": "Two-bedroom flat in a quiet residential area, with nearby amenities and great transport connections...",
-            "location": "Green Lane, Epsom KT18",
+            "location": "Green Lane, Epsom KT18, Colombo 00300, Sri Lanka",
             "picture": "images/prop10pic1small.jpg",
             "url": "properties/prop10.html",
             "added": {
                 "month": "November",
                 "day": 5,
+                "year": 2023
+            }
+        },
+        {
+            "id": "prop11",
+            "title": "Well-Maintained Two-Bedroom Bungalow",
+            "type": "Bungalow",
+            "bedrooms": 2,
+            "price": 480000,
+            "tenure": "Freehold",
+            "description": "A well-maintained two-bedroom bungalow with a large garden and garage...",
+            "location": "Willow Road, Bromley BR2, Kandy 20000, Sri Lanka",
+            "picture": "images/prop11pic1small.jpg",
+            "url": "properties/prop11.html",
+            "added": {
+                "month": "December",
+                "day": 5,
+                "year": 2023
+            }
+        },
+        {
+            "id": "prop12",
+            "title": "Modern One-Bedroom Apartment in Dover",
+            "type": "Apartment",
+            "bedrooms": 1,
+            "price": 250000,
+            "tenure": "Leasehold",
+            "description": "A modern one-bedroom apartment in a secure gated complex, located close to amenities...",
+            "location": "Main Street, Dover CT16, Colombo 00300, Sri Lanka",
+            "picture": "images/prop12pic1small.jpg",
+            "url": "properties/prop12.html",
+            "added": {
+                "month": "December",
+                "day": 15,
+                "year": 2023
+            }
+        },
+        {
+            "id": "prop13",
+            "title": "Commercial Retail Space in Sevenoaks",
+            "type": "Commercial",
+            "bedrooms": 0,
+            "price": 850000,
+            "tenure": "Leasehold",
+            "description": "A commercial property suitable for retail or office use, located in a prime location...",
+            "location": "High Street, Sevenoaks TN13, Colombo 00300, Sri Lanka",
+            "picture": "images/prop13pic1small.jpg",
+            "url": "properties/prop13.html",
+            "added": {
+                "month": "November",
+                "day": 30,
+                "year": 2023
+            }
+        },
+        {
+            "id": "prop14",
+            "title": "Exclusive Five-Bedroom Villa in Marbella",
+            "type": "Villa",
+            "bedrooms": 5,
+            "price": 2000000,
+            "tenure": "Freehold",
+            "description": "An exclusive five-bedroom villa with an infinity pool and stunning sea views...",
+            "location": "Coastal Road, Marbella 29600, Colombo 00300, Sri Lanka",
+            "picture": "images/prop14pic1small.jpg",
+            "url": "properties/prop14.html",
+            "added": {
+                "month": "July",
+                "day": 1,
+                "year": 2023
+            }
+        },
+        {
+            "id": "prop15",
+            "title": "Compact Studio Apartment in Chancery Lane",
+            "type": "Studio",
+            "bedrooms": 1,
+            "price": 199995,
+            "tenure": "Leasehold",
+            "description": "A compact studio apartment located in a vibrant neighborhood, perfect for young professionals...",
+            "location": "Chancery Lane, London EC4A, Colombo 00300, Sri Lanka",
+            "picture": "images/prop15pic1small.jpg",
+            "url": "properties/prop15.html",
+            "added": {
+                "month": "August",
+                "day": 18,
+                "year": 2023
+            }
+        },
+        {
+            "id": "prop16",
+            "title": "Spacious Family House in Galle Face Road",
+            "type": "House",
+            "bedrooms": 3,
+            "price": 980000,
+            "tenure": "Freehold",
+            "description": "Spacious four-bedroom family house located near Galle Face Green in Colombo...",
+            "location": "Galle Face Road, Colombo 00300, Colombo 00300, Sri Lanka",
+            "picture": "images/prop16pic1small.jpg",
+            "url": "properties/prop16.html",
+            "added": {
+                "month": "November",
+                "day": 20,
+                "year": 2023
+            }
+        },
+        {
+            "id": "prop17",
+            "title": "Luxury Three-Bedroom Bungalow in Kandy",
+            "type": "Bungalow",
+            "bedrooms": 3,
+            "price": 600000,
+            "tenure": "Freehold",
+            "description": "Luxury three-bedroom bungalow with a lush garden located in Kandy's tranquil surroundings...",
+            "location": "Peradeniya Road, Kandy 20000, Kandy 20000, Sri Lanka",
+            "picture": "images/prop17pic1small.jpg",
+            "url": "properties/prop17.html",
+            "added": {
+                "month": "December",
+                "day": 5,
+                "year": 2023
+            }
+        },
+        {
+            "id": "prop18",
+            "title": "Spacious Two-Bedroom Flat in Colombo",
+            "type": "Flat",
+            "bedrooms": 2,
+            "price": 450000,
+            "tenure": "Freehold",
+            "description": "Two-bedroom flat with easy access to transport links and amenities in the city center...",
+            "location": "Main Street, Colombo 00300, Colombo 00300, Sri Lanka",
+            "picture": "images/prop18pic1small.jpg",
+            "url": "properties/prop18.html",
+            "added": {
+                "month": "October",
+                "day": 14,
+                "year": 2023
+            }
+        },
+        {
+            "id": "prop19",
+            "title": "Spacious Three-Bedroom Flat in Wimbledon",
+            "type": "Flat",
+            "bedrooms": 3,
+            "price": 575000,
+            "tenure": "Leasehold",
+            "description": "Spacious three-bedroom flat with a private balcony and access to communal gardens...",
+            "location": "Wimbledon SW19, Colombo 00300, Colombo 00300, Sri Lanka",
+            "picture": "images/prop19pic1small.jpg",
+            "url": "properties/prop19.html",
+            "added": {
+                "month": "November",
+                "day": 10,
+                "year": 2023
+            }
+        },
+        {
+            "id": "prop20",
+            "title": "Modern Three-Bedroom House in Shirley",
+            "type": "House",
+            "bedrooms": 3,
+            "price": 890000,
+            "tenure": "Freehold",
+            "description": "A modern three-bedroom house with a garden and garage, situated in a quiet residential area...",
+            "location": "Shirley Hills Road, Shirley CR0, Colombo 00300, Sri Lanka",
+            "picture": "images/prop20pic1small.jpg",
+            "url": "properties/prop20.html",
+            "added": {
+                "month": "December",
+                "day": 20,
                 "year": 2023
             }
         }
