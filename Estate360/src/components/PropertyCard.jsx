@@ -1,6 +1,8 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function PropertyCard({
+    id,
     type,
     title,
     bedrooms,
@@ -12,8 +14,14 @@ function PropertyCard({
     url,
     added,
 }) {
+    const navigate = useNavigate();
+
+    const handleViewDetails = () => {
+        navigate(`/property/${id}`); // Redirect to the details page with the property ID
+    };
+
     return (
-        <div className="card h-100 shadow border-0">
+        <div className="card h-100 shadow-sm border-1">
             <img
                 src={picture}
                 alt={`Image of ${type}`}
@@ -50,14 +58,12 @@ function PropertyCard({
                         </li>
                     </ul>
                 </div>
-                <a
-                    href={url}
+                <button
+                    onClick={handleViewDetails}
                     className="btn btn-outline-success btn-sm w-100"
-                    target="_blank"
-                    rel="noopener noreferrer"
                 >
                     View Details
-                </a>
+                </button>
             </div>
         </div>
     );

@@ -1,72 +1,58 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Categories from '../components/Categories';
 import Properties from '../components/Properties';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 function Sales() {
-    const [properties, setProperties] = useState([]);
-    const [selectedFilters, setSelectedFilters] = useState([]);
-    const [filteredItems, setFilteredItems] = useState([]);
-    const [isLoading, setIsLoading] = useState(true);
-    const [error, setError] = useState(null);
+    const [properties, setProperties] = useState([]); // All properties
+    const [filters, setFilters] = useState({
+        type: '',
+        location: '',
+        maxPrice: Infinity,
+        minBedrooms: 0,
+    });
+    const [filteredProperties, setFilteredProperties] = useState([]); // Filtered properties
 
+    // Fetch properties data
     useEffect(() => {
-        fetch('/properties.json')
-            .then((response) => {
-                if (!response.ok) {
-                    throw new Error('Failed to fetch properties data');
-                }
-                return response.json();
+        fetch('/properties.json') // Adjust path if necessary
+            .then((response) => response.json())
+            .then((data) => {
+                setProperties(data.properties);
+                setFilteredProperties(data.properties); // Show all properties by default
             })
-            .then((data) => setProperties(data?.properties || []))
-            .catch((error) => {
-                console.error('Error fetching properties:', error);
-                setError('Unable to load properties. Please try again later.');
-            })
-            .finally(() => setIsLoading(false));
+            .catch((error) => console.error('Error loading properties:', error));
     }, []);
 
-    useEffect(() => {
+    // Function to apply filters (triggered by the search button)
+    const applyFilters = () => {
+        const filtered = properties.filter((property) => {
+            const matchesType = filters.type ? property.type === filters.type : true;
+            const matchesLocation = filters.location ? property.location === filters.location : true;
+            const matchesPrice = property.price <= filters.maxPrice;
+            const matchesBedrooms = property.bedrooms >= filters.minBedrooms;
 
-        if (selectedFilters.length > 0) {
-            setFilteredItems(
-                properties.filter((property) => selectedFilters.includes(property.type))
-            );
-        } else {
-            setFilteredItems(properties);
-        }
-    }, [selectedFilters, properties]);
+            return matchesType && matchesLocation && matchesPrice && matchesBedrooms;
+        });
+        setFilteredProperties(filtered);
+    };
 
-    const handleFilterChange = (category) => {
-        setSelectedFilters((prevFilters) =>
-            prevFilters.includes(category)
-                ? prevFilters.filter((filter) => filter !== category)
-                : [...prevFilters, category]
-        );
+    // Handle filter changes from Categories component
+    const handleFilterChange = (newFilters) => {
+        setFilters((prevFilters) => ({ ...prevFilters, ...newFilters }));
     };
 
     return (
-        <div>
+        <>
             <Navigation />
-        <div className="container py-4">
-            {isLoading ? (
-                <p className="text-center text-muted">Loading properties...</p>
-            ) : error ? (
-                <p className="text-center text-danger">{error}</p>
-            ) : (
-                <>
-                    <Categories
-                        properties={properties}
-                        selectedFilters={selectedFilters}
-                        onFilterChange={handleFilterChange}
-                    />
-                    <Properties properties={filteredItems} />
-                </>
-            )}
-        </div>
-        <Footer />
-        </div>
+            <div className="sales-page container py-4">
+                <h1 className="mb-4 text-center fw-bold">Find Your Perfect Property</h1>
+                <Categories filters={filters} onFilterChange={handleFilterChange} onSearch={applyFilters} />
+                <Properties properties={filteredProperties} />
+            </div>
+            <Footer />
+        </>
     );
 }
 

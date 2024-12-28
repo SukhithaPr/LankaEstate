@@ -31,6 +31,11 @@ const Navigation = () => {
                                 Rentals
                             </Link>
                         </li>
+                        {/* <li className="nav-item">
+                            <Link to="/Lands" className="nav-link px-3 fw-semibold" href="/lands">
+                                Lands
+                            </Link>
+                        </li> */}
                         <li className="nav-item">
                             <Link to="/Contact" className="nav-link px-3 fw-semibold" href="/contact">
                                 Contact us

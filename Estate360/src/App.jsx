@@ -8,6 +8,7 @@ import Sales from './pages/Sales';
 import Rentals from './pages/Rentals';
 import Contact from './pages/Contact';
 import Wishlist from './pages/Wishlist';
+import PropertyDetails from './pages/PropertyDetails';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/rentals" element={<Rentals />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/wishlist" element={<Wishlist />} />
+        <Route path="/property/:id" element={<PropertyDetails />} />
       </Routes>
     </div>
   );

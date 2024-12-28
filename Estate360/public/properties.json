@@ -2,343 +2,854 @@
     "properties": [
         {
             "id": "prop1",
-            "title": "2 Bedroom apartment for sale",
-            "type": "House",
-            "bedrooms": 2,
-            "price": 118000000,
+            "title": "Luxury Villa in Colombo 3",
+            "type": "Villa",
+            "bedrooms": 4,
+            "price": 1200000,
             "tenure": "Freehold",
-            "description": "Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station...",
-            "location": "Tangalle",
+            "description": "A luxurious four-bedroom villa located in the heart of Colombo 3, offering modern amenities and stunning views of the city.",
+            "location": "Colombo",
             "picture": "images/prop1pic1small.jpg",
             "url": "properties/prop1.html",
             "added": {
-                "month": "October",
-                "day": 12,
-                "year": 2022
+                "month": "January",
+                "day": 5,
+                "year": 2024
             }
         },
         {
             "id": "prop2",
-            "title": "Modern Garden Flat in Crofton Road",
-            "type": "Flat",
-            "bedrooms": 2,
-            "price": 399995,
-            "tenure": "Freehold",
-            "description": "Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat...",
-            "location": "Colombo",
+            "title": "Modern Apartment in Mount Lavinia",
+            "type": "Apartment",
+            "bedrooms": 3,
+            "price": 800000,
+            "tenure": "Leasehold",
+            "description": "A modern three-bedroom apartment with spacious living areas and an ocean view located in Mount Lavinia.",
+            "location": "Mount Lavinia",
             "picture": "images/prop2pic1small.jpg",
             "url": "properties/prop2.html",
             "added": {
-                "month": "September",
-                "day": 14,
-                "year": 2022
+                "month": "January",
+                "day": 10,
+                "year": 2024
             }
         },
         {
             "id": "prop3",
-            "title": "Spacious Family Home in Bromley",
-            "type": "House",
-            "bedrooms": 4,
-            "price": 650000,
-            "tenure": "Leasehold",
-            "description": "A spacious four-bedroom house with a large garden, located near excellent schools and transport links...",
-            "location": "Kandy",
+            "title": "Seafront Luxury Property in Galle",
+            "type": "Villa",
+            "bedrooms": 5,
+            "price": 1500000,
+            "tenure": "Freehold",
+            "description": "A luxurious beachfront property in Galle, featuring five bedrooms, a private pool, and direct beach access.",
+            "location": "Galle",
             "picture": "images/prop3pic1small.jpg",
             "url": "properties/prop3.html",
             "added": {
-                "month": "January",
-                "day": 20,
-                "year": 2023
+                "month": "February",
+                "day": 15,
+                "year": 2024
             }
         },
         {
             "id": "prop4",
-            "title": "Charming One-Bedroom Flat in Croydon",
-            "type": "Flat",
-            "bedrooms": 1,
-            "price": 275000,
+            "title": "Traditional House in Kandy",
+            "type": "House",
+            "bedrooms": 3,
+            "price": 400000,
             "tenure": "Freehold",
-            "description": "A cozy one-bedroom flat perfect for first-time buyers, close to shops and public transport...",
-            "location": "Colombo",
+            "description": "A charming traditional Sri Lankan house located in Kandy, with three bedrooms and beautiful garden views.",
+            "location": "Kandy",
             "picture": "images/prop4pic1small.jpg",
             "url": "properties/prop4.html",
             "added": {
-                "month": "March",
-                "day": 15,
-                "year": 2023
+                "month": "February",
+                "day": 20,
+                "year": 2024
             }
         },
         {
             "id": "prop5",
-            "title": "Luxury Five-Bedroom Detached Home in Finchley",
-            "type": "House",
-            "bedrooms": 5,
-            "price": 1200000,
-            "tenure": "Freehold",
-            "description": "A luxury five-bedroom detached home with a swimming pool and landscaped garden...",
+            "title": "Spacious Apartment in Colombo 7",
+            "type": "Apartment",
+            "bedrooms": 2,
+            "price": 600000,
+            "tenure": "Leasehold",
+            "description": "A spacious two-bedroom apartment in the prestigious Colombo 7, with proximity to schools and business districts.",
             "location": "Colombo",
             "picture": "images/prop5pic1small.jpg",
             "url": "properties/prop5.html",
             "added": {
-                "month": "June",
-                "day": 10,
-                "year": 2023
+                "month": "March",
+                "day": 5,
+                "year": 2024
             }
         },
         {
             "id": "prop6",
-            "title": "Modern Three-Bedroom Flat in Docklands",
-            "type": "Flat",
+            "title": "Eco-Friendly House in Nuwara Eliya",
+            "type": "House",
             "bedrooms": 3,
-            "price": 450000,
-            "tenure": "Leasehold",
-            "description": "Modern three-bedroom flat with a balcony offering stunning city views, located near Canary Wharf...",
-            "location": "Colombo",
+            "price": 750000,
+            "tenure": "Freehold",
+            "description": "An eco-friendly house with sustainable features in the cool climate of Nuwara Eliya, perfect for nature lovers.",
+            "location": "Nuwara Eliya",
             "picture": "images/prop6pic1small.jpg",
             "url": "properties/prop6.html",
             "added": {
-                "month": "July",
-                "day": 8,
-                "year": 2023
+                "month": "March",
+                "day": 18,
+                "year": 2024
             }
         },
         {
             "id": "prop7",
-            "title": "Charming Two-Bedroom Cottage in Hayes",
-            "type": "House",
-            "bedrooms": 2,
-            "price": 310000,
-            "tenure": "Leasehold",
-            "description": "Charming two-bedroom cottage with a fireplace and original features, ideal for couples...",
-            "location": "Kandy",
+            "title": "Luxurious Beachfront Villa in Trincomalee",
+            "type": "Villa",
+            "bedrooms": 6,
+            "price": 2000000,
+            "tenure": "Freehold",
+            "description": "A beachfront villa with six bedrooms located in the picturesque Trincomalee, offering stunning ocean views and tranquility.",
+            "location": "Trincomalee",
             "picture": "images/prop7pic1small.jpg",
             "url": "properties/prop7.html",
             "added": {
-                "month": "August",
-                "day": 21,
-                "year": 2023
+                "month": "April",
+                "day": 2,
+                "year": 2024
             }
         },
         {
             "id": "prop8",
-            "title": "Luxury Penthouse in Mayfair",
-            "type": "Flat",
+            "title": "Mountain Retreat in Ella",
+            "type": "Villa",
             "bedrooms": 4,
-            "price": 875000,
-            "tenure": "Freehold",
-            "description": "Stunning four-bedroom penthouse apartment with a private terrace and concierge service...",
-            "location": "Colombo",
+            "price": 850000,
+            "tenure": "Leasehold",
+            "description": "A serene mountain retreat in Ella, offering breathtaking views, four bedrooms, and an expansive garden for outdoor activities.",
+            "location": "Ella",
             "picture": "images/prop8pic1small.jpg",
             "url": "properties/prop8.html",
             "added": {
-                "month": "September",
-                "day": 3,
-                "year": 2023
+                "month": "April",
+                "day": 10,
+                "year": 2024
             }
         },
         {
             "id": "prop9",
-            "title": "Charming Three-Bedroom House in Kingston",
-            "type": "House",
-            "bedrooms": 3,
-            "price": 550000,
-            "tenure": "Freehold",
-            "description": "A charming three-bedroom house with a modern kitchen and a spacious backyard...",
-            "location": "Colombo",
+            "title": "Charming Cottage in Polonnaruwa",
+            "type": "Cottage",
+            "bedrooms": 2,
+            "price": 350000,
+            "tenure": "Leasehold",
+            "description": "A quaint two-bedroom cottage located in Polonnaruwa, near ancient ruins and surrounded by lush greenery.",
+            "location": "Polonnaruwa",
             "picture": "images/prop9pic1small.jpg",
             "url": "properties/prop9.html",
             "added": {
-                "month": "October",
-                "day": 10,
-                "year": 2023
+                "month": "May",
+                "day": 14,
+                "year": 2024
             }
         },
         {
             "id": "prop10",
-            "title": "Two-Bedroom Flat in Epsom",
-            "type": "Flat",
-            "bedrooms": 2,
-            "price": 325000,
-            "tenure": "Leasehold",
-            "description": "Two-bedroom flat in a quiet residential area, with nearby amenities and great transport connections...",
+            "title": "Luxury Apartment in Colombo 5",
+            "type": "Apartment",
+            "bedrooms": 3,
+            "price": 700000,
+            "tenure": "Freehold",
+            "description": "A luxury three-bedroom apartment in the heart of Colombo 5, with easy access to shopping malls, schools, and restaurants.",
             "location": "Colombo",
             "picture": "images/prop10pic1small.jpg",
             "url": "properties/prop10.html",
             "added": {
-                "month": "November",
-                "day": 5,
-                "year": 2023
+                "month": "May",
+                "day": 21,
+                "year": 2024
             }
         },
         {
             "id": "prop11",
-            "title": "Well-Maintained Two-Bedroom Bungalow",
-            "type": "Bungalow",
-            "bedrooms": 2,
-            "price": 480000,
+            "title": "Country Villa in Kurunegala",
+            "type": "Villa",
+            "bedrooms": 4,
+            "price": 900000,
             "tenure": "Freehold",
-            "description": "A well-maintained two-bedroom bungalow with a large garden and garage...",
-            "location": "Kandy",
+            "description": "A beautiful country villa located in Kurunegala, offering a peaceful lifestyle with a large garden and fruit trees.",
+            "location": "Kurunegala",
             "picture": "images/prop11pic1small.jpg",
             "url": "properties/prop11.html",
             "added": {
-                "month": "December",
-                "day": 5,
-                "year": 2023
+                "month": "June",
+                "day": 2,
+                "year": 2024
             }
         },
         {
             "id": "prop12",
-            "title": "Modern One-Bedroom Apartment in Dover",
+            "title": "Exclusive Apartment in Colombo 6",
             "type": "Apartment",
-            "bedrooms": 1,
-            "price": 250000,
+            "bedrooms": 2,
+            "price": 500000,
             "tenure": "Leasehold",
-            "description": "A modern one-bedroom apartment in a secure gated complex, located close to amenities...",
+            "description": "A modern and exclusive two-bedroom apartment in Colombo 6, ideal for young professionals and small families.",
             "location": "Colombo",
             "picture": "images/prop12pic1small.jpg",
             "url": "properties/prop12.html",
             "added": {
-                "month": "December",
-                "day": 15,
-                "year": 2023
+                "month": "June",
+                "day": 14,
+                "year": 2024
             }
         },
         {
             "id": "prop13",
-            "title": "Commercial Retail Space in Sevenoaks",
-            "type": "Commercial",
-            "bedrooms": 0,
-            "price": 850000,
-            "tenure": "Leasehold",
-            "description": "A commercial property suitable for retail or office use, located in a prime location...",
-            "location": "Colombo",
+            "title": "Contemporary Home in Jaffna",
+            "type": "House",
+            "bedrooms": 5,
+            "price": 750000,
+            "tenure": "Freehold",
+            "description": "A contemporary five-bedroom home located in Jaffna, featuring modern design and spacious interiors.",
+            "location": "Jaffna",
             "picture": "images/prop13pic1small.jpg",
             "url": "properties/prop13.html",
             "added": {
-                "month": "November",
-                "day": 30,
-                "year": 2023
+                "month": "July",
+                "day": 3,
+                "year": 2024
             }
         },
         {
             "id": "prop14",
-            "title": "Exclusive Five-Bedroom Villa in Marbella",
+            "title": "Luxury Villa in Galle",
             "type": "Villa",
-            "bedrooms": 5,
-            "price": 2000000,
+            "bedrooms": 6,
+            "price": 1400000,
             "tenure": "Freehold",
-            "description": "An exclusive five-bedroom villa with an infinity pool and stunning sea views...",
-            "location": "Colombo",
+            "description": "A stunning six-bedroom villa in Galle, featuring luxury finishes, a private pool, and spectacular views of the Indian Ocean.",
+            "location": "Galle",
             "picture": "images/prop14pic1small.jpg",
             "url": "properties/prop14.html",
             "added": {
                 "month": "July",
-                "day": 1,
-                "year": 2023
+                "day": 16,
+                "year": 2024
             }
         },
         {
             "id": "prop15",
-            "title": "Compact Studio Apartment in Chancery Lane",
-            "type": "Studio",
-            "bedrooms": 1,
-            "price": 199995,
-            "tenure": "Leasehold",
-            "description": "A compact studio apartment located in a vibrant neighborhood, perfect for young professionals...",
-            "location": "Colombo",
+            "title": "Seafront Property in Matara",
+            "type": "Villa",
+            "bedrooms": 4,
+            "price": 950000,
+            "tenure": "Freehold",
+            "description": "A magnificent four-bedroom seafront villa in Matara, offering breathtaking views and complete privacy.",
+            "location": "Matara",
             "picture": "images/prop15pic1small.jpg",
             "url": "properties/prop15.html",
             "added": {
-                "month": "August",
-                "day": 18,
-                "year": 2023
+                "month": "July",
+                "day": 21,
+                "year": 2024
             }
         },
         {
             "id": "prop16",
-            "title": "Spacious Family House in Galle Face Road",
+            "title": "Eco-Friendly House in Nuwara Eliya",
             "type": "House",
-            "bedrooms": 3,
-            "price": 980000,
-            "tenure": "Freehold",
-            "description": "Spacious four-bedroom family house located near Galle Face Green in Colombo...",
-            "location": "Colombo",
+            "bedrooms": 4,
+            "price": 700000,
+            "tenure": "Leasehold",
+            "description": "An eco-friendly house in the cool highlands of Nuwara Eliya, offering modern sustainability with stunning mountain views.",
+            "location": "Nuwara Eliya",
             "picture": "images/prop16pic1small.jpg",
             "url": "properties/prop16.html",
             "added": {
-                "month": "November",
-                "day": 20,
-                "year": 2023
+                "month": "August",
+                "day": 2,
+                "year": 2024
             }
         },
         {
             "id": "prop17",
-            "title": "Luxury Three-Bedroom Bungalow in Kandy",
-            "type": "Bungalow",
-            "bedrooms": 3,
-            "price": 600000,
+            "title": "Waterfront Villa in Colombo 6",
+            "type": "Villa",
+            "bedrooms": 5,
+            "price": 1600000,
             "tenure": "Freehold",
-            "description": "Luxury three-bedroom bungalow with a lush garden located in Kandy's tranquil surroundings...",
-            "location": "Kandy",
+            "description": "A luxurious waterfront villa in Colombo 6, offering panoramic views of the ocean and modern amenities.",
+            "location": "Colombo",
             "picture": "images/prop17pic1small.jpg",
             "url": "properties/prop17.html",
             "added": {
-                "month": "December",
-                "day": 5,
-                "year": 2023
+                "month": "August",
+                "day": 14,
+                "year": 2024
             }
         },
         {
             "id": "prop18",
-            "title": "Spacious Two-Bedroom Flat in Colombo",
-            "type": "Flat",
-            "bedrooms": 2,
-            "price": 450000,
+            "title": "Private Island Retreat in Kalpitiya",
+            "type": "Island",
+            "bedrooms": 8,
+            "price": 2500000,
             "tenure": "Freehold",
-            "description": "Two-bedroom flat with easy access to transport links and amenities in the city center...",
-            "location": "Colombo",
+            "description": "A luxurious private island retreat in Kalpitiya, featuring 8 villas, a private beach, and stunning views of the Indian Ocean.",
+            "location": "Kalpitiya",
             "picture": "images/prop18pic1small.jpg",
             "url": "properties/prop18.html",
             "added": {
-                "month": "October",
-                "day": 14,
-                "year": 2023
+                "month": "September",
+                "day": 5,
+                "year": 2024
             }
         },
         {
             "id": "prop19",
-            "title": "Spacious Three-Bedroom Flat in Wimbledon",
-            "type": "Flat",
+            "title": "Luxury Apartment in Colombo 2",
+            "type": "Apartment",
             "bedrooms": 3,
-            "price": 575000,
-            "tenure": "Leasehold",
-            "description": "Spacious three-bedroom flat with a private balcony and access to communal gardens...",
+            "price": 850000,
+            "tenure": "Freehold",
+            "description": "A three-bedroom luxury apartment in the heart of Colombo 2, offering stunning views of the city and ocean.",
             "location": "Colombo",
             "picture": "images/prop19pic1small.jpg",
             "url": "properties/prop19.html",
             "added": {
-                "month": "November",
+                "month": "September",
                 "day": 10,
-                "year": 2023
+                "year": 2024
             }
         },
         {
             "id": "prop20",
-            "title": "Modern Three-Bedroom House in Shirley",
-            "type": "House",
-            "bedrooms": 3,
-            "price": 890000,
+            "title": "Spacious Bungalow in Ratnapura",
+            "type": "Bungalow",
+            "bedrooms": 4,
+            "price": 700000,
             "tenure": "Freehold",
-            "description": "A modern three-bedroom house with a garden and garage, situated in a quiet residential area...",
-            "location": "Colombo",
+            "description": "A spacious bungalow in Ratnapura, surrounded by nature and offering ample space for family living.",
+            "location": "Ratnapura",
             "picture": "images/prop20pic1small.jpg",
             "url": "properties/prop20.html",
             "added": {
-                "month": "December",
-                "day": 20,
-                "year": 2023
+                "month": "September",
+                "day": 18,
+                "year": 2024
             }
-        }
+        },
+        {
+            "id": "prop21",
+            "title": "Luxury House in Negombo",
+            "type": "House",
+            "bedrooms": 5,
+            "price": 1200000,
+            "tenure": "Freehold",
+            "description": "A luxurious five-bedroom house in Negombo, featuring modern design and easy access to the beach and city amenities.",
+            "location": "Negombo",
+            "picture": "images/prop21pic1small.jpg",
+            "url": "properties/prop21.html",
+            "added": {
+                "month": "October",
+                "day": 1,
+                "year": 2024
+            }
+        },
+        {
+            "id": "prop22",
+            "title": "Mountain Retreat in Nuwara Eliya",
+            "type": "Villa",
+            "bedrooms": 6,
+            "price": 950000,
+            "tenure": "Freehold",
+            "description": "A six-bedroom mountain retreat located in Nuwara Eliya, with magnificent views of the hills and the tea plantations.",
+            "location": "Nuwara Eliya",
+            "picture": "images/prop22pic1small.jpg",
+            "url": "properties/prop22.html",
+            "added": {
+                "month": "October",
+                "day": 10,
+                "year": 2024
+            }
+        },
+        {
+            "id": "prop23",
+            "title": "Traditional House in Anuradhapura",
+            "type": "House",
+            "bedrooms": 3,
+            "price": 400000,
+            "tenure": "Leasehold",
+            "description": "A charming traditional Sri Lankan house in Anuradhapura, offering a peaceful rural lifestyle with proximity to cultural sites.",
+            "location": "Anuradhapura",
+            "picture": "images/prop23pic1small.jpg",
+            "url": "properties/prop23.html",
+            "added": {
+                "month": "October",
+                "day": 25,
+                "year": 2024
+            }
+        },
+        {
+            "id": "prop24",
+            "title": "Luxury Beach House in Hambantota",
+            "type": "House",
+            "bedrooms": 4,
+            "price": 1100000,
+            "tenure": "Freehold",
+            "description": "A luxury four-bedroom beach house located in Hambantota, offering private beach access and spacious interiors.",
+            "location": "Hambantota",
+            "picture": "images/prop24pic1small.jpg",
+            "url": "properties/prop24.html",
+            "added": {
+                "month": "November",
+                "day": 3,
+                "year": 2024
+            }
+        },
+        {
+            "id": "prop25",
+            "title": "City Penthouse in Colombo 7",
+            "type": "Penthouse",
+            "bedrooms": 3,
+            "price": 1200000,
+            "tenure": "Freehold",
+            "description": "A luxurious penthouse in Colombo 7, with sweeping views of the city and upscale living spaces.",
+            "location": "Colombo",
+            "picture": "images/prop25pic1small.jpg",
+            "url": "properties/prop25.html",
+            "added": {
+                "month": "November",
+                "day": 10,
+                "year": 2024
+            }
+        },
+        {
+            "id": "prop26",
+            "title": "Historic Property in Colombo Fort",
+            "type": "Building",
+            "bedrooms": 8,
+            "price": 900000,
+            "tenure": "Freehold",
+            "description": "An 8-bedroom historic building in Colombo Fort, a prime location for commercial or residential conversion...",
+            "location": "Colombo",
+            "picture": "images/prop26pic1small.jpg",
+            "url": "properties/prop26.html",
+            "added": {
+                "month": "December",
+                "day": 1,
+                "year": 2024
+            }
+        },
+        {
+            "id": "prop27",
+            "title": "Modern Townhouse in Kotte",
+            "type": "Townhouse",
+            "bedrooms": 3,
+            "price": 750000,
+            "tenure": "Leasehold",
+            "description": "A modern 3-bedroom townhouse in Kotte, featuring contemporary design and close proximity to urban conveniences...",
+            "location": "Kotte",
+            "picture": "images/prop27pic1small.jpg",
+            "url": "properties/prop27.html",
+            "added": {
+                "month": "December",
+                "day": 12,
+                "year": 2024
+            }
+        },
+        {
+            "id": "prop28",
+            "title": "Private Retreat in Ratnapura",
+            "type": "Villa",
+            "bedrooms": 5,
+            "price": 800000,
+            "tenure": "Freehold",
+            "description": "A private retreat located in Ratnapura, offering peace and serenity with modern amenities and expansive grounds...",
+            "location": "Ratnapura",
+            "picture": "images/prop28pic1small.jpg",
+            "url": "properties/prop28.html",
+            "added": {
+                "month": "December",
+                "day": 18,
+                "year": 2024
+            }
+        },
+        {
+            "id": "prop29",
+            "title": "Luxury 4-Bedroom House in Kandy",
+            "type": "House",
+            "bedrooms": 4,
+            "price": 920000,
+            "tenure": "Freehold",
+            "description": "A luxury four-bedroom house in the scenic hill town of Kandy, offering stunning views and exclusive design...",
+            "location": "Kandy",
+            "picture": "images/prop29pic1small.jpg",
+            "url": "properties/prop29.html",
+            "added": {
+                "month": "December",
+                "day": 22,
+                "year": 2024
+            }
+        },
+        {
+            "id": "prop30",
+            "title": "Rustic Cottage in Jaffna",
+            "type": "Cottage",
+            "bedrooms": 2,
+            "price": 330000,
+            "tenure": "Leasehold",
+            "description": "A quaint rustic cottage situated in the scenic beauty of Jaffna, offering a peaceful escape from city life...",
+            "location": "Jaffna",
+            "picture": "images/prop30pic1small.jpg",
+            "url": "properties/prop30.html",
+            "added": {
+                "month": "January",
+                "day": 1,
+                "year": 2025
+            }
+        },
+        {
+            "id": "prop31",
+            "title": "Luxury Resort in Beruwala",
+            "type": "Resort",
+            "bedrooms": 10,
+            "price": 2400000,
+            "tenure": "Freehold",
+            "description": "A luxury resort with 10 spacious villas in Beruwala, a perfect investment opportunity in the booming tourism sector...",
+            "location": "Beruwala",
+            "picture": "images/prop31pic1small.jpg",
+            "url": "properties/prop31.html",
+            "added": {
+                "month": "January",
+                "day": 5,
+                "year": 2025
+            }
+        },
+        {
+            "id": "prop32",
+            "title": "Contemporary 3-Bedroom Apartment in Galle",
+            "type": "Apartment",
+            "bedrooms": 3,
+            "price": 650000,
+            "tenure": "Leasehold",
+            "description": "A sleek, contemporary 3-bedroom apartment in Galle, offering luxurious living with sea views...",
+            "location": "Galle",
+            "picture": "images/prop32pic1small.jpg",
+            "url": "properties/prop32.html",
+            "added": {
+                "month": "February",
+                "day": 1,
+                "year": 2025
+            }
+        },
+        {
+            "id": "prop33",
+            "title": "Modern Luxury Villa in Kalutara",
+            "type": "Villa",
+            "bedrooms": 5,
+            "price": 1800000,
+            "tenure": "Freehold",
+            "description": "A modern luxury villa in Kalutara, offering panoramic views of the beach and top-of-the-line amenities...",
+            "location": "Kalutara",
+            "picture": "images/prop33pic1small.jpg",
+            "url": "properties/prop33.html",
+            "added": {
+                "month": "February",
+                "day": 15,
+                "year": 2025
+            }
+        },
+        {
+            "id": "prop34",
+            "title": "High-End Urban Loft in Colombo 3",
+            "type": "Loft",
+            "bedrooms": 2,
+            "price": 750000,
+            "tenure": "Freehold",
+            "description": "A high-end urban loft in the heart of Colombo 3, offering luxury living in a trendy neighborhood...",
+            "location": "Colombo",
+            "picture": "images/prop34pic1small.jpg",
+            "url": "properties/prop34.html",
+            "added": {
+                "month": "March",
+                "day": 1,
+                "year": 2025
+            }
+        },
+        {
+            "id": "prop35",
+            "title": "Luxury Beachfront Villa in Trincomalee",
+            "type": "Villa",
+            "bedrooms": 4,
+            "price": 2200000,
+            "tenure": "Freehold",
+            "description": "A luxury 4-bedroom beachfront villa in Trincomalee, offering exceptional views of the Indian Ocean...",
+            "location": "Trincomalee",
+            "picture": "images/prop35pic1small.jpg",
+            "url": "properties/prop35.html",
+            "added": {
+                "month": "March",
+                "day": 10,
+                "year": 2025
+            }
+        },
+        {
+                    "id": "prop36",
+                    "title": "Modern Villa in Kandy",
+                    "type": "Villa",
+                    "bedrooms": 5,
+                    "price": 1350000,
+                    "tenure": "Freehold",
+                    "description": "A modern five-bedroom villa nestled in the hills of Kandy, offering breathtaking views of the surrounding mountains.",
+                    "location": "Kandy",
+                    "picture": "images/prop36pic1small.jpg",
+                    "url": "properties/prop36.html",
+                    "added": {
+                        "month": "March",
+                        "day": 15,
+                        "year": 2025
+                    }
+                },
+                {
+                    "id": "prop37",
+                    "title": "Luxury House in Negombo",
+                    "type": "House",
+                    "bedrooms": 6,
+                    "price": 1600000,
+                    "tenure": "Freehold",
+                    "description": "A spacious six-bedroom house in Negombo with luxury fittings, just minutes from the beach and city amenities.",
+                    "location": "Negombo",
+                    "picture": "images/prop37pic1small.jpg",
+                    "url": "properties/prop37.html",
+                    "added": {
+                        "month": "April",
+                        "day": 1,
+                        "year": 2025
+                    }
+                },
+                {
+                    "id": "prop38",
+                    "title": "Seafront House in Hikkaduwa",
+                    "type": "House",
+                    "bedrooms": 4,
+                    "price": 1200000,
+                    "tenure": "Freehold",
+                    "description": "A stunning four-bedroom seafront house in Hikkaduwa, featuring expansive ocean views and a private beach.",
+                    "location": "Hikkaduwa",
+                    "picture": "images/prop38pic1small.jpg",
+                    "url": "properties/prop38.html",
+                    "added": {
+                        "month": "April",
+                        "day": 10,
+                        "year": 2025
+                    }
+                },
+                {
+                    "id": "prop39",
+                    "title": "Elegant House in Kalutara",
+                    "type": "House",
+                    "bedrooms": 4,
+                    "price": 950000,
+                    "tenure": "Leasehold",
+                    "description": "An elegant four-bedroom house in Kalutara, with beautifully landscaped gardens and a peaceful ambiance.",
+                    "location": "Kalutara",
+                    "picture": "images/prop39pic1small.jpg",
+                    "url": "properties/prop39.html",
+                    "added": {
+                        "month": "April",
+                        "day": 18,
+                        "year": 2025
+                    }
+                },
+                {
+                    "id": "prop40",
+                    "title": "Beachfront Villa in Mirissa",
+                    "type": "Villa",
+                    "bedrooms": 3,
+                    "price": 1100000,
+                    "tenure": "Freehold",
+                    "description": "A charming beachfront villa in Mirissa, offering spectacular views and direct access to the beach.",
+                    "location": "Mirissa",
+                    "picture": "images/prop40pic1small.jpg",
+                    "url": "properties/prop40.html",
+                    "added": {
+                        "month": "April",
+                        "day": 25,
+                        "year": 2025
+                    }
+                },
+                {
+                    "id": "prop41",
+                    "title": "Luxury Villa in Galle",
+                    "type": "Villa",
+                    "bedrooms": 6,
+                    "price": 2200000,
+                    "tenure": "Freehold",
+                    "description": "A stunning six-bedroom luxury villa in Galle, with expansive gardens and modern amenities.",
+                    "location": "Galle",
+                    "picture": "images/prop41pic1small.jpg",
+                    "url": "properties/prop41.html",
+                    "added": {
+                        "month": "May",
+                        "day": 5,
+                        "year": 2025
+                    }
+                },
+                {
+                    "id": "prop42",
+                    "title": "Luxury House in Bentota",
+                    "type": "House",
+                    "bedrooms": 5,
+                    "price": 1450000,
+                    "tenure": "Freehold",
+                    "description": "A five-bedroom luxury house in Bentota, offering contemporary design and a private pool.",
+                    "location": "Bentota",
+                    "picture": "images/prop42pic1small.jpg",
+                    "url": "properties/prop42.html",
+                    "added": {
+                        "month": "May",
+                        "day": 10,
+                        "year": 2025
+                    }
+                },
+                {
+                    "id": "prop43",
+                    "title": "Beachfront Resort in Trincomalee",
+                    "type": "Resort",
+                    "bedrooms": 12,
+                    "price": 3000000,
+                    "tenure": "Freehold",
+                    "description": "A luxury beachfront resort in Trincomalee, with 12 villas, ideal for investment in the tourism industry.",
+                    "location": "Trincomalee",
+                    "picture": "images/prop43pic1small.jpg",
+                    "url": "properties/prop43.html",
+                    "added": {
+                        "month": "May",
+                        "day": 15,
+                        "year": 2025
+                    }
+                },
+                {
+                    "id": "prop44",
+                    "title": "Mountain View House in Nuwara Eliya",
+                    "type": "House",
+                    "bedrooms": 5,
+                    "price": 800000,
+                    "tenure": "Leasehold",
+                    "description": "A five-bedroom house in Nuwara Eliya, offering panoramic mountain views and a serene environment.",
+                    "location": "Nuwara Eliya",
+                    "picture": "images/prop44pic1small.jpg",
+                    "url": "properties/prop44.html",
+                    "added": {
+                        "month": "May",
+                        "day": 20,
+                        "year": 2025
+                    }
+                },
+                {
+                    "id": "prop45",
+                    "title": "Modern Villa in Colombo 7",
+                    "type": "Villa",
+                    "bedrooms": 4,
+                    "price": 1800000,
+                    "tenure": "Freehold",
+                    "description": "A modern four-bedroom villa in Colombo 7, offering luxury living with private garden space and close proximity to city life.",
+                    "location": "Colombo",
+                    "picture": "images/prop45pic1small.jpg",
+                    "url": "properties/prop45.html",
+                    "added": {
+                        "month": "June",
+                        "day": 1,
+                        "year": 2025
+                    }
+                },
+                {
+                    "id": "prop46",
+                    "title": "Seafront Property in Tangalle",
+                    "type": "Villa",
+                    "bedrooms": 4,
+                    "price": 1350000,
+                    "tenure": "Freehold",
+                    "description": "A seafront villa in Tangalle, offering modern living with breathtaking ocean views and private beach access.",
+                    "location": "Tangalle",
+                    "picture": "images/prop46pic1small.jpg",
+                    "url": "properties/prop46.html",
+                    "added": {
+                        "month": "June",
+                        "day": 5,
+                        "year": 2025
+                    }
+                },
+                {
+                    "id": "prop47",
+                    "title": "Luxury Cottage in Anuradhapura",
+                    "type": "Cottage",
+                    "bedrooms": 3,
+                    "price": 550000,
+                    "tenure": "Freehold",
+                    "description": "A luxury 3-bedroom cottage in Anuradhapura, with a tranquil environment and proximity to ancient temples.",
+                    "location": "Anuradhapura",
+                    "picture": "images/prop47pic1small.jpg",
+                    "url": "properties/prop47.html",
+                    "added": {
+                        "month": "June",
+                        "day": 12,
+                        "year": 2025
+                    }
+                },
+                {
+                    "id": "prop48",
+                    "title": "Beach House in Negombo",
+                    "type": "House",
+                    "bedrooms": 4,
+                    "price": 1400000,
+                    "tenure": "Freehold",
+                    "description": "A beautiful four-bedroom beach house in Negombo, offering both serenity and easy access to the city.",
+                    "location": "Negombo",
+                    "picture": "images/prop48pic1small.jpg",
+                    "url": "properties/prop48.html",
+                    "added": {
+                        "month": "June",
+                        "day": 20,
+                        "year": 2025
+                    }
+                },
+                {
+                    "id": "prop49",
+                    "title": "Exclusive Villa in Beruwala",
+                    "type": "Villa",
+                    "bedrooms": 5,
+                    "price": 1600000,
+                    "tenure": "Freehold",
+                    "description": "An exclusive five-bedroom villa in Beruwala, perfect for luxury living with top-tier amenities and private access to the beach.",
+                    "location": "Beruwala",
+                    "picture": "images/prop49pic1small.jpg",
+                    "url": "properties/prop49.html",
+                    "added": {
+                        "month": "July",
+                        "day": 1,
+                        "year": 2025
+                    }
+                },
+                {
+                    "id": "prop50",
+                    "title": "Oceanfront Villa in Kalpitiya",
+                    "type": "Villa",
+                    "bedrooms": 4,
+                    "price": 2000000,
+                    "tenure": "Freehold",
+                    "description": "An exquisite oceanfront villa in Kalpitiya, offering unobstructed views of the Indian Ocean and exclusive luxury features.",
+                    "location": "Kalpitiya",
+                    "picture": "images/prop50pic1small.jpg",
+                    "url": "properties/prop50.html",
+                    "added": {
+                        "month": "July",
+                        "day": 5,
+                        "year": 2025
+                    }
+                }
+        
     ]
 }
