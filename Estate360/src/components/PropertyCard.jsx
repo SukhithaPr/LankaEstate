@@ -23,7 +23,7 @@ function PropertyCard({
     return (
         <div className="card h-100 shadow-sm border-1">
             <img
-                src={picture}
+                src={picture.main}
                 alt={`Image of ${type}`}
                 className="card-img-top"
                 style={{

@@ -17,7 +17,7 @@ function Properties() {
                         <p className="card-text">
                             A serene retirement community designed for comfortable and peaceful living amidst lush greenery. Perfect for a relaxing lifestyle.
                         </p>
-                        <a href="#" className="btn btn-success bg-success">More info</a>
+                        <a href="https://www.homelandsskyline.lk/housing-project/greendale-retirement-cottage-for-sale-in-athurugiriya" target="_blank" className="btn btn-success bg-success">More info</a>
                     </div>
                 </div>
                 <div className="card shadow-sm" style={{ width: '18rem' }}>
@@ -31,7 +31,7 @@ function Properties() {
                         <p className="card-text">
                             Luxurious beachfront villas offering breathtaking ocean views and world-class amenities. A true haven by the sea.
                         </p>
-                        <a href="#" className="btn btn-success bg-success">More info</a>
+                        <a href="https://www.homelandsskyline.lk/housing-project/luxury-beach-villas-for-sale-in-wadduwa" target="_blank" className="btn btn-success bg-success">More info</a>
                     </div>
                 </div>
                 <div className="card shadow-sm" style={{ width: '18rem' }}>
@@ -46,7 +46,7 @@ function Properties() {
                             Elegant villas situated next to a world-class golf course. Ideal for those who appreciate luxury and the game of golf.
                         </p>
                         <br />
-                        <a href="#" className="btn btn-success bg-success">More info</a>
+                        <a href="https://www.homelandsskyline.lk/housing-project/canterbury-golf-villa-for-sale-in-piliyandala" target="_blank" className="btn btn-success bg-success">More info</a>
                     </div>
                 </div>
                 <div className="card shadow-sm" style={{ width: '18rem' }}>
@@ -61,7 +61,7 @@ function Properties() {
                             Modern residencies in a prime location, offering premium facilities and easy access to urban conveniences.
                         </p>
                         <br />
-                        <a href="#" className="btn btn-success bg-success">More info</a>
+                        <a href="https://www.homelandsskyline.lk/housing-project/canterbury-house-for-sale-in-piliyandala" target="_blank" className="btn btn-success bg-success">More info</a>
                     </div>
                 </div>
             </div>
