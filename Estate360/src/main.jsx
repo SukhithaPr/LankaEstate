@@ -1,12 +1,16 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
-import { BrowserRouter } from 'react-router-dom'
+import { StrictMode } from 'react';
+import ReactDOM from 'react-dom';
+import App from './App.jsx';
+import { BrowserRouter } from 'react-router-dom';
+import { WishlistProvider } from './components/WishlistContext';
 
-createRoot(document.getElementById('root')).render(
+ReactDOM.render(
   <StrictMode>
     <BrowserRouter>
-      <App />
+      <WishlistProvider>
+        <App />
+      </WishlistProvider>
     </BrowserRouter>
   </StrictMode>,
-)
+  document.getElementById('root')
+);

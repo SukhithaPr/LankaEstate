@@ -11,3 +11,52 @@
     object-fit: cover;
     border-radius: 5px;
 }
+
+#nav-toggle:checked+label+.collapse {
+    display: block !important;
+}
+
+.glass-navbar {
+    background: rgba(255, 255, 255, 0.164);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.wishlist-sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Hidden by default */
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease; /* Smooth sliding animation */
+    z-index: 1050;
+    overflow-y: auto;
+}
+
+.wishlist-sidebar.open {
+    right: 0; /* Slide in */
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+}
+
+.sidebar-content {
+    padding: 1rem;
+}
+
+.close-btn {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #000;
+    cursor: pointer;
+}

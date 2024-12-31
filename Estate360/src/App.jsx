@@ -9,19 +9,22 @@ import Rentals from './pages/Rentals';
 import Contact from './pages/Contact';
 import Wishlist from './pages/Wishlist';
 import PropertyDetails from './pages/PropertyDetails';
+import { WishlistProvider } from './components/WishlistContext';
 
 function App() {
   return (
-    <div>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/sales" element={<Sales />} />
-        <Route path="/rentals" element={<Rentals />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/wishlist" element={<Wishlist />} />
-        <Route path="/property/:id" element={<PropertyDetails />} />
-      </Routes>
-    </div>
+    <WishlistProvider>
+      <div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/sales" element={<Sales />} />
+          <Route path="/rentals" element={<Rentals />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/wishlist" element={<Wishlist />} />
+          <Route path="/property/:id" element={<PropertyDetails />} />
+        </Routes>
+      </div>
+    </WishlistProvider>
   );
 }
 

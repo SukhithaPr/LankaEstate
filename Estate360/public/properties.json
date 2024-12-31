@@ -2,7 +2,7 @@
     "properties": [
         {
             "id": "prop1",
-            "title": "Elegant and Tranquil Villa for Sale in Nuwara Eliya ( Villa Verde Nuwara Eliya )",
+            "title": "Elegant and Tranquil Villa for Sale in Nuwara Eliya",
             "type": "Villa",
             "bedrooms": 4,
             "bathrooms": 4,
@@ -21,7 +21,7 @@
                     "img4": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/149158935.jpg?k=e3a2dce87e55a570fa50791b5034b86bc3393a5d7bc0f3fac907432d18684b2a&o=&hp=1"
                 }
             },
-            "url": "properties/prop1.html",
+            "url": "https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=Villa%20Verde%20Ella+(Villa%20Verde%20Ella)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed",
             "added": {
                 "month": "January",
                 "day": 5,
@@ -86,7 +86,7 @@
         },
         {
             "id": "prop4",
-            "title": "Luxury Villa in Galle with Private Pool",
+            "title": "Luxury Villa in Deniyaya with Private Pool",
             "type": "Villa",
             "bedrooms": 5,
             "bathrooms": 5,
@@ -95,7 +95,7 @@
             "tenure": "Freehold",
             "description": "A lavish 5-bedroom villa with a private pool and tropical garden, located in Galle's upscale residential area.",
             "description2": "This sprawling 5-bedroom villa in Galle combines luxury with tropical elegance. Surrounded by a beautifully landscaped garden and featuring a private pool, the villa offers ultimate privacy and comfort. The modern architecture blends traditional Sri Lankan elements with contemporary design, and the interiors are spacious, featuring high ceilings and large windows that offer breathtaking views of the lush greenery. With five well-appointed bedrooms, expansive living and dining areas, and a gourmet kitchen, this villa is ideal for families or those seeking a vacation retreat. Located in one of Sri Lanka’s most sought-after areas, this villa offers both exclusivity and convenience, close to the beach and the charming town of Galle.",
-            "location": "Galle",
+            "location": "Matara",
             "picture": {
                 "main": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/61497574.jpg?k=8e3dc284006c69512559b08a29a364af727534211a8c91262ce571e02351cbff&o=&hp=1",
                 "other": {
