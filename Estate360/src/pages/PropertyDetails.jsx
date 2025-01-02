@@ -113,7 +113,6 @@ function PropertyDetails() {
                 <br />
                 <li>{property.description2}</li>
                 <br />
-                <br />
                 <div className="d-flex justify-content-center flex-wrap gap-2">
                     {Object.values(property.picture?.other || {}).map((img, index) => (
                         <img
@@ -125,8 +124,18 @@ function PropertyDetails() {
                         />
                     ))}
                 </div>
-
             </ul>
+            <br />
+            <h3 className='fw-bold'>Property highlights</h3>        
+            <div className="row rounded-3 min-vh-60 shadow" style={{ backgroundColor: '#f4f8f9' }}>
+                <div className="col-md-6 d-flex flex-column justify-content-center p-2 gap-3">
+                    <ul className="list-unstyled">
+                        <li>{property.bedrooms}</li>
+                        <li>{property.bathrooms}</li>
+                        <li>{property.landSize}</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     );
 
@@ -162,7 +171,7 @@ function PropertyDetails() {
                     </div>
                 </div>
             </section>
-            <Box sx={{ borderBottom: 1, borderColor: 'divider', marginTop: 4 }}>
+            <Box sx={{ borderBottom: 1, borderColor: 'divider', marginTop: 0 }}>
                 <Tabs
                     value={value}
                     onChange={handleChange}
