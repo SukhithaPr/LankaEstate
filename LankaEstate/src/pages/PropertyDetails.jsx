@@ -108,6 +108,7 @@ function PropertyDetails() {
         <div className='container p-4 rounded-3'>
             <ul className="list-unstyled">
                 <li><h3 className='fw-bold'>{property.title}</h3></li>
+                <li><i className="bi bi-geo-alt-fill" /> {`${property.location.no}, ${property.location.road}, ${property.location.city} ${property.location.postalcode}`}</li>
                 <br />
                 <li>{property.description2}</li>
                 <br />
@@ -135,17 +136,6 @@ function PropertyDetails() {
                 </div>
             </div>
         </div>
-    );
-
-    const renderDetails = () => (
-        <ul className="list-unstyled">
-            <li><strong>Type:</strong> {property.type}</li>
-            <li><strong>Bedrooms:</strong> {property.bedrooms}</li>
-            <li><strong>Price:</strong> Rs.{property.price.toLocaleString()}</li>
-            <li><strong>Tenure:</strong> {property.tenure}</li>
-            <li><strong>Added:</strong> {`${property.added.day} ${property.added.month} ${property.added.year}`}</li>
-            <li><strong>Location:</strong> {property.location}</li>
-        </ul>
     );
 
     return (
@@ -197,7 +187,6 @@ function PropertyDetails() {
             <CustomTabPanel value={value} index={1}>
                 <div className="card-body">
                     <h5 className="card-title text-center fs-3">Details</h5>
-                    {renderDetails()}
                 </div>
             </CustomTabPanel>
             <CustomTabPanel value={value} index={2}>

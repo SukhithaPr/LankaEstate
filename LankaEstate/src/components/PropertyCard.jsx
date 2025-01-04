@@ -28,10 +28,10 @@ function PropertyCard({
             <button
                 onClick={() => onWishlistToggle({ id, type, title, bedrooms, price, tenure, description, location, picture, url, added })}
                 className="btn btn-light btn-sm position-absolute rounded-circle"
-                style={{ top: '10px', right: '10px', zIndex: 10 }}
+                style={{ top: '10px', right: '10px', zIndex: 10, fontSize: '1rem' }}
                 aria-label="Add to Wishlist"
             >
-                <i className={`bi ${isWishlisted ? 'bi-suit-heart-fill text-danger' : 'bi-suit-heart text-muted'}`}></i>
+                <i className={`bi ${isWishlisted ? 'bi-suit-heart-fill text-danger' : 'bi-suit-heart text-dark'}`}></i>
             </button>
 
             <img
@@ -62,7 +62,7 @@ function PropertyCard({
                         <li>
                             <strong>Location:</strong>{' '}
                             <span className="text-success">
-                                <i className="bi bi-geo-alt-fill"></i> {location}
+                                <i className="bi bi-geo-alt-fill"></i> {location.city}
                             </span>
                         </li>
                     </ul>
