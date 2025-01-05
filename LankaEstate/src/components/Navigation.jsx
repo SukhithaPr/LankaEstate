@@ -15,7 +15,7 @@ const Navigation = ({ wishlist, onWishlistToggle, onClearWishlist }) => {
 
     return (
         <>
-            <nav className="glass-navbar navbar navbar-expand-lg navbar-light sticky-top">
+            <nav className="glass-navbar navbar navbar-expand-lg navbar-light">
                 <div className="container-fluid px-5">
                     <a className="navbar-brand fs-3 fw-bolder text-success d-flex align-items-center" href="/">
                         LankaEstate
