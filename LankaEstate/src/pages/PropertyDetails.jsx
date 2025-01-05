@@ -5,10 +5,12 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import Modal from '@mui/material/Modal';
 import { IoIosBed } from "react-icons/io";
 import { MdBathroom } from "react-icons/md";
 import { PiResizeFill } from "react-icons/pi";
 import { PiHouseFill } from "react-icons/pi";
+import { Details } from '@mui/icons-material';
 
 // Custom hook for fetching data
 function useFetch(url) {
@@ -69,8 +71,11 @@ function PropertyDetails() {
     const { data: properties, loading, error } = useFetch('/properties.json');
     const [property, setProperty] = useState(null);
     const [value, setValue] = useState(0);
+    const [open, setOpen] = useState(false);
 
     const handleChange = (event, newValue) => setValue(newValue);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
 
     useEffect(() => {
         if (properties) {
@@ -108,12 +113,12 @@ function PropertyDetails() {
         );
     }
 
-    const overview = () => (
+    const content = () => (
         <div className='container p-4 rounded-3'>
             <p>{property.description2}</p>
             <hr />
-            <div className='d-flex justify-content-between'>
-                <div>
+            <div className='d-flex flex-column flex-md-row justify-content-between'>
+                <div className='Info'>
                     <div className='d-flex justify-content-between'>
                         <p className='fs-6'><i className="bi bi-geo-alt-fill" /> {`${property.location.no}, ${property.location.road}, ${property.location.city} ${property.location.postalcode}`}</p>
                     </div>
@@ -130,11 +135,11 @@ function PropertyDetails() {
                         </span>
                     </div>
                     <div className='d-flex justify-content-between'>
-                        <p className='fw-bold text-success' style={{ fontSize: '0.85rem' }} >Monthly mortgage payment</p>
-                        <p className='fw-bold text-muted' style={{ fontSize: '0.8rem' }} >Added on {`${property.added.day} ${property.added.month} ${property.added.year}`}</p>
+                        <p className='fw-bold text-success' style={{ fontSize: '0.85rem' }}>Monthly mortgage payment</p>
+                        <p className='fw-bold text-muted' style={{ fontSize: '0.8rem' }}>Added on {`${property.added.day} ${property.added.month} ${property.added.year}`}</p>
                     </div>
                     <hr />
-                    <div className='d-flex justify-content-between gap-4'>
+                    <div className='d-flex flex-wrap justify-content-between gap-3'>
                         <div className='d-flex flex-column'>
                             <p className="text-muted" style={{ fontSize: '0.8rem' }}>Property Type</p>
                             <div className='d-flex gap-2'>
@@ -171,23 +176,83 @@ function PropertyDetails() {
                         </div>
                     </div>
                 </div>
-                <div>
-                    <iframe
-                        src={`https://www.google.com/maps?q=${encodeURIComponent(property.address)}, ${encodeURIComponent(
-                            property.address
-                        )}&output=embed`}
-                        title="Google Map"
-                        width="550px"
-                        height="100%"
-                        style={{ borderRadius: 5 }}
-                        allowFullScreen
-                        loading="lazy"
-                    ></iframe>
+                <div className="mt-4 mt-md-0">
+                    {property.address ? (
+                        <iframe
+                            src={`https://www.google.com/maps?q=${encodeURIComponent(property.address)}&output=embed`}
+                            title="Google Map"
+                            width="600"
+                            height="230"
+                            style={{ borderRadius: 5 }}
+                            allowFullScreen
+                            loading="lazy"
+                        ></iframe>
+                    ) : (
+                        <p>Map not available</p>
+                    )}
                 </div>
             </div>
             <hr />
-            <div>
-                <img src={property.floorPlan} alt="floorPlan" />
+            <div className="d-flex flex-column flex-md-row justify-content-between gap-4 mt-4">
+                <div>
+                    <img
+                        src={property.floorPlan}
+                        alt="Floor Plan"
+                        className="img-fluid rounded shadow"
+                        onClick={handleOpen}
+                        style={{ cursor: 'pointer' }}
+                        loading="lazy"
+                    />
+                </div>
+                <div>
+                    <h5 className="fw-bold">Property Features</h5>
+                    <ul className="list-unstyled">
+                        {property.keyFeatures?.map((feature, index) => (
+                            <li key={index} className="mb-2 d-flex align-items-center">
+                                <i className="bi bi-check-circle-fill text-success me-2"></i>
+                                {feature}
+                            </li>
+                        )) || <li className="text-muted">No features available</li>}
+                    </ul>
+                    <p>{property.floorPlanDescription || "Floor plan details are not available."}</p>
+                </div>
+            </div>
+            <Modal open={open} onClose={handleClose} aria-labelledby="floorplan-modal-title" aria-describedby="floorplan-modal-description">
+                <Box
+                    sx={{
+                        position: 'absolute',
+                        top: '50%',
+                        left: '50%',
+                        transform: 'translate(-50%, -50%)',
+                        width: '90%',
+                        maxWidth: 800,
+                        bgcolor: 'background.paper',
+                        boxShadow: 24,
+                        p: 4,
+                        borderRadius: 2
+                    }}
+                >
+                    <Typography id="floorplan-modal-title" variant="h6" component="h2">
+                        Floor Plan
+                    </Typography>
+                    <img
+                        src={property.floorPlan}
+                        alt="Expanded Floor Plan"
+                        style={{ width: '100%', height: 'auto', borderRadius: 5 }}
+                    />
+                </Box>
+            </Modal>
+            <hr />
+            <div className="d-flex justify-content-center flex-wrap gap-2">
+                {Object.values(property.picture?.other || {}).map((img, index) => (
+                    <img
+                        key={index}
+                        src={img}
+                        alt={`Property image ${index + 1}`}
+                        className="rounded"
+                        style={{ width: '100%', maxWidth: '200px', height: 'auto', objectFit: 'cover' }}
+                    />
+                ))}
             </div>
         </div>
     );
@@ -213,18 +278,6 @@ function PropertyDetails() {
                 </div>
                 <br />
 
-                <div className="d-flex justify-content-center flex-wrap gap-2">
-                    {Object.values(property.picture?.other || {}).map((img, index) => (
-                        <img
-                            key={index}
-                            src={img}
-                            alt={`Property image ${index + 1}`}
-                            className="rounded"
-                            style={{ width: '265.6px', height: '215.6px', objectFit: 'cover' }}
-                        />
-                    ))}
-                </div>
-
             </section>
             <Box sx={{ borderBottom: 1, borderColor: 'divider', marginTop: 0 }}>
                 <Tabs
@@ -239,33 +292,28 @@ function PropertyDetails() {
                         '& .MuiTab-root.Mui-selected': { color: '#188754', fontWeight: 'bold' },
                         '& .MuiTabs-indicator': { backgroundColor: '#188754' },
                     }}
-                    centered
+                    variant="scrollable"
+                    scrollButtons="auto"
                 >
-                    <Tab label="Overview" {...a11yProps(0)} />
+                    <Tab label="overview" {...a11yProps(0)} />
                     <Tab label="Details" {...a11yProps(1)} />
-                    <Tab label="Location" {...a11yProps(2)} />
-                    <Tab label="Reserve" {...a11yProps(3)} />
+                    <Tab label="Contact" {...a11yProps(2)} />
                 </Tabs>
             </Box>
             <CustomTabPanel value={value} index={0}>
                 <div className="card-body">
-                    {overview()}
+                    {content()}
                 </div>
             </CustomTabPanel>
             <CustomTabPanel value={value} index={1}>
-                <div className="card-body">
-                    <h5 className="card-title text-center fs-3">Details</h5>
+            <div className="card-body">
+                    {content()}
                 </div>
             </CustomTabPanel>
             <CustomTabPanel value={value} index={2}>
-                <Typography variant="body1" align="justify">
-                    This property is located in one of the most desirable areas. Explore the neighborhood and its amenities.
-                </Typography>
-            </CustomTabPanel>
-            <CustomTabPanel value={value} index={3}>
-                <Typography variant="body1" align="justify">
-                    Secure your spot today by reserving this property. Get in touch for further steps.
-                </Typography>
+            <div className="card-body">
+                    {content()}
+                </div>
             </CustomTabPanel>
         </>
     );
