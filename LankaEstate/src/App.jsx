@@ -18,10 +18,8 @@ function App() {
   const handleWishlistToggle = (property) => {
     setWishlist((prevWishlist) => {
       if (prevWishlist.some((item) => item.id === property.id)) {
-        // Remove property if it's already in the wishlist
         return prevWishlist.filter((item) => item.id !== property.id);
       } else {
-        // Add property to the wishlist
         return [...prevWishlist, property];
       }
     });
@@ -44,7 +42,7 @@ function App() {
         <Route path="/rentals" element={<Rentals onWishlistToggle={handleWishlistToggle} wishlist={wishlist} />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/wishlist" element={<Wishlist wishlist={wishlist} onWishlistToggle={handleWishlistToggle} />} />
-        <Route path="/property/:id" element={<PropertyDetails />} />
+        <Route path="/property/:id" element={<PropertyDetails onWishlistToggle={handleWishlistToggle} wishlist={wishlist} />} />
       </Routes>
       <Footer />
     </div>

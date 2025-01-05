@@ -17,6 +17,7 @@
                 "city": "Ella",
                 "postalcode": "90090"
             },
+            "address": "Villa Verde Ella, 7th Mild Post, Ella - Passara Rd, Ella 90090",
             "picture": {
                 "main": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/149171039.jpg?k=0be5a6e431f5128ff36b7562abcfdfb3bcb3e06d50f8bd00188319f1353f447a&o=&hp=1",
                 "other": {
@@ -26,6 +27,7 @@
                     "img4": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/149158935.jpg?k=e3a2dce87e55a570fa50791b5034b86bc3393a5d7bc0f3fac907432d18684b2a&o=&hp=1"
                 }
             },
+            "floorPlan": "https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2F17hsgbbvbmmc1.jpeg",
             "url": "https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=Villa%20Verde%20Ella+(Villa%20Verde%20Ella)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed",
             "added": {
                 "month": "January",
@@ -50,6 +52,7 @@
                 "city": "Colombo",
                 "postalcode": "06000"
             },
+            "address": "Supun Arcade Residency, 56 Galle Rd, Colombo 00600",
             "picture": {
                 "main": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/460696185.jpg?k=3e1277f1307c6b4f3055ecae613e4c6e0486ad5a9a462307a41c1542da8c82e4&o=&hp=1",
                 "other": {
@@ -83,6 +86,7 @@
                 "city": "Kandy",
                 "postalcode": "20000"
             },
+            "address": "Liselma Residence, 70A Rajapihilla Mawatha, Kandy 20000",
             "picture": {
                 "main": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/627255804.jpg?k=d6bdae3e5bfd1aa9b4618d44a8967eb8d3e7437719a3bbd79b2bb94de921047b&o=&hp=1",
                 "other": {
@@ -116,6 +120,7 @@
                 "city": "Deniyaya",
                 "postalcode": "80000"
             },
+            "address": "Villa White Queen by Ceylon Itinerary, 27 Steel Rd, Galle 80000",
             "picture": {
                 "main": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/61497574.jpg?k=8e3dc284006c69512559b08a29a364af727534211a8c91262ce571e02351cbff&o=&hp=1",
                 "other": {
@@ -142,13 +147,14 @@
             "price": 175000000,
             "tenure": "Freehold",
             "description": "A large family house with a spacious garden and parking space, situated near the beaches of Negombo.",
-            "description2": "This spacious family home is situated just a stone's throw away from the stunning beaches of Negombo, one of Sri Lanka’s most popular coastal destinations. The house features six well-sized bedrooms and four modern bathrooms, with expansive living areas and a large kitchen, making it ideal for large families. The property also boasts a beautifully maintained garden, perfect for outdoor entertaining or relaxation. With ample parking space and close proximity to local amenities, including schools, shopping centers, and restaurants, this house offers a balanced combination of comfort, convenience, and coastal living.",
+            "description2": "This spacious family home is situated just a stone's throw away from the stunning beaches of Negombo, one of Sri Lanka's most popular coastal destinations. The house features six well-sized bedrooms and four modern bathrooms, with expansive living areas and a large kitchen, making it ideal for large families. The property also boasts a beautifully maintained garden, perfect for outdoor entertaining or relaxation. With ample parking space and close proximity to local amenities, including schools, shopping centers, and restaurants, this house offers a balanced combination of comfort, convenience, and coastal living.",
             "location": {
                 "no": "10/A", 
                 "road": "St Jude place, 6th lane, Thaladuwa",
                 "city": "Negombo",
                 "postalcode": "11500"
             },
+            "address": "Still Waters Artistry Sri Lanka, 10/A, St. Jude place, 6th Lane, Negombo 11500",
             "picture": {
                 "main": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/573912052.jpg?k=4c17b449f1f38e8f7b3b3070009dea56d3e9bc812e3acc70ebeebeacb9cde815&o=&hp=1",
                 "other": {
@@ -167,21 +173,22 @@
         },
         {
             "id": "prop6",
-            "title": "Contemporary 3-Bedroom House in Mount Lavinia",
+            "title": "Contemporary 3-Bedroom House in Nugegoda",
             "type": "House",
             "bedrooms": 3,
             "bathrooms": 3,
             "landSize": "450 perches",
             "price": 95000000,
             "tenure": "Freehold",
-            "description": "A modern 3-bedroom house with a beautiful garden, located in the coastal town of Mount Lavinia.",
-            "description2": "This stunning 3-bedroom house in Mount Lavinia offers modern living with the added charm of coastal beauty. The property features spacious interiors with an open-plan layout, offering a seamless flow between the living, dining, and kitchen areas. The master suite boasts an en-suite bathroom and a private balcony with views of the lush greenery. Outside, the beautifully landscaped garden offers ample space for outdoor dining and relaxation. A stone's throw away from the beach, this home combines urban living with a relaxing coastal atmosphere, making it perfect for those seeking tranquility without being far from the city.",
+            "description": "A modern 3-bedroom house with a beautiful garden, located in the coastal town of Nugegoda.",
+            "description2": "This stunning 3-bedroom house in Nugegoda offers modern living with the added charm of coastal beauty. The property features spacious interiors with an open-plan layout, offering a seamless flow between the living, dining, and kitchen areas. The master suite boasts an en-suite bathroom and a private balcony with views of the lush greenery. Outside, the beautifully landscaped garden offers ample space for outdoor dining and relaxation. A stone's throw away from the beach, this home combines urban living with a relaxing coastal atmosphere, making it perfect for those seeking tranquility without being far from the city.",
             "location": {
                 "no": "", 
                 "road": "Old Kottawa Road, Nugegoda",
                 "city": "Colombo",
                 "postalcode": "06000"
             },
+            "address": "SGA Villa Colombo, Old Kottawa Road, Nugegoda, Sri Lanka, 10250",
             "picture": {
                 "main": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/621958004.jpg?k=5c85cfebe13af23d049a0740cc19a04841c048d7c47768cef8f4a22065cbb6c0&o=&hp=1",
                 "other": {
@@ -215,6 +222,7 @@
                 "city": "Colombo",
                 "postalcode": "06000"
             },
+            "address": "Havelock Road, Colombo 5",
             "picture": {
                 "main": "https://i.ikman-st.com/17p-commercial-property-facing-havelock-road-colombo-5-for-sale-for-sale-colombo/e23a0cc9-dedd-4a32-8315-32502c59f06c/780/585/fitted.jpg",
                 "other": {
@@ -248,6 +256,7 @@
                 "city": "Mirissa",
                 "postalcode": "81750 "
             },
+            "address": "Nisala Villas, WGQ2+RMJ, Kamburugamuwa",
             "picture": {
                 "main": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/31694511.jpg?k=30a1e37d33afaabeb9b09cf9c2ec8da65cade03e1ad07d2318e3b110c1696f61&o=&hp=1",
                 "other": {
@@ -281,6 +290,7 @@
                 "city": "Nuwara Eliya",
                 "postalcode": "22200"
             },
+            "address": "Hikers Holiday Home, No,8/5, Nuwara Eliya 22200",
             "picture": {
                 "main": "https://cf.bstatic.com/xdata/images/hotel/max1280x900/612893841.jpg?k=f2c2bd95c178a67aa17e766756e60c592b9c1604e744a4115135b4548bd606cc&o=&hp=1",
                 "other": {
@@ -314,6 +324,7 @@
                 "city": "Maharagama",
                 "postalcode": "10230"
             },
+            "address": "Maharagama, Pamunuwa",
             "picture": {
                 "main": "https://i.ikman-st.com/dc437-vaannij-goddnaegillk-vikinniimtt-mhrgm-for-sale-colombo-1/32a2b437-3476-4ec8-957d-d3fff1359188/780/585/fitted.jpg",
                 "other": {

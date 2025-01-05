@@ -5,6 +5,10 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import { IoIosBed } from "react-icons/io";
+import { MdBathroom } from "react-icons/md";
+import { PiResizeFill } from "react-icons/pi";
+import { PiHouseFill } from "react-icons/pi";
 
 // Custom hook for fetching data
 function useFetch(url) {
@@ -106,34 +110,84 @@ function PropertyDetails() {
 
     const overview = () => (
         <div className='container p-4 rounded-3'>
-            <ul className="list-unstyled">
-                <li><h3 className='fw-bold'>{property.title}</h3></li>
-                <li><i className="bi bi-geo-alt-fill" /> {`${property.location.no}, ${property.location.road}, ${property.location.city} ${property.location.postalcode}`}</li>
-                <br />
-                <li>{property.description2}</li>
-                <br />
-                <div className="d-flex justify-content-center flex-wrap gap-2">
-                    {Object.values(property.picture?.other || {}).map((img, index) => (
-                        <img
-                            key={index}
-                            src={img}
-                            alt={`Property image ${index + 1}`}
-                            className="rounded"
-                            style={{ width: '200px', height: '150px', objectFit: 'cover' }}
-                        />
-                    ))}
+            <p>{property.description2}</p>
+            <hr />
+            <div className='d-flex justify-content-between'>
+                <div>
+                    <div className='d-flex justify-content-between'>
+                        <p className='fs-6'><i className="bi bi-geo-alt-fill" /> {`${property.location.no}, ${property.location.road}, ${property.location.city} ${property.location.postalcode}`}</p>
+                    </div>
+                    <div className="d-flex gap-1">
+                        <h3 className="fw-bold">Rs. {property.price.toLocaleString()}</h3>
+                        <span
+                            className="material-symbols-outlined text-success"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            title="Knowing the purchase price means you can work out the total cost of buying the property."
+                            style={{ paddingTop: '0.15rem', cursor: 'pointer' }}
+                        >
+                            info
+                        </span>
+                    </div>
+                    <div className='d-flex justify-content-between'>
+                        <p className='fw-bold text-success' style={{ fontSize: '0.85rem' }} >Monthly mortgage payment</p>
+                        <p className='fw-bold text-muted' style={{ fontSize: '0.8rem' }} >Added on {`${property.added.day} ${property.added.month} ${property.added.year}`}</p>
+                    </div>
+                    <hr />
+                    <div className='d-flex justify-content-between gap-4'>
+                        <div className='d-flex flex-column'>
+                            <p className="text-muted" style={{ fontSize: '0.8rem' }}>Property Type</p>
+                            <div className='d-flex gap-2'>
+                                <PiHouseFill size='1.5em' />
+                                <p className='fs-6'>{property.type}</p>
+                            </div>
+                        </div>
+                        <div className='d-flex flex-column'>
+                            <p className="text-muted" style={{ fontSize: '0.8rem' }}>Bedrooms</p>
+                            <div className='d-flex gap-2'>
+                                <IoIosBed size='1.5em' />
+                                <p className='fs-6'>{property.bedrooms}</p>
+                            </div>
+                        </div>
+                        <div className='d-flex flex-column'>
+                            <p className="text-muted" style={{ fontSize: '0.8rem' }}>Bathroom</p>
+                            <div className='d-flex gap-2'>
+                                <MdBathroom size='1.5em' />
+                                <p className='fs-6'>{property.bathrooms}</p>
+                            </div>
+                        </div>
+                        <div className='d-flex flex-column'>
+                            <p className="text-muted" style={{ fontSize: '0.8rem' }}>Tenure</p>
+                            <div className='d-flex gap-2'>
+                                <p className='fs-6'>{property.tenure}</p>
+                            </div>
+                        </div>
+                        <div className='d-flex flex-column'>
+                            <p className="text-muted" style={{ fontSize: '0.8rem' }}>Size</p>
+                            <div className='d-flex gap-2'>
+                                <PiResizeFill size='1.5em' />
+                                <p className='fs-6'>{property.landSize}</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </ul>
-            <br />
-            <h3 className='fw-bold'>Property highlights</h3>        
-            <div className="row rounded-3 min-vh-60 shadow" style={{ backgroundColor: '#f4f8f9' }}>
-                <div className="col-md-6 d-flex flex-column justify-content-center p-2 gap-3">
-                    <ul className="list-unstyled">
-                        <li>{property.bedrooms}</li>
-                        <li>{property.bathrooms}</li>
-                        <li>{property.landSize}</li>
-                    </ul>
+                <div>
+                    <iframe
+                        src={`https://www.google.com/maps?q=${encodeURIComponent(property.address)}, ${encodeURIComponent(
+                            property.address
+                        )}&output=embed`}
+                        title="Google Map"
+                        width="550px"
+                        height="100%"
+                        style={{ borderRadius: 5 }}
+                        allowFullScreen
+                        loading="lazy"
+                    ></iframe>
                 </div>
+            </div>
+            <hr />
+            <div>
+                <img src={property.floorPlan} alt="floorPlan" />
             </div>
         </div>
     );
@@ -157,6 +211,20 @@ function PropertyDetails() {
                         <h2 className="fw-bold display-6">{property.title}</h2>
                     </div>
                 </div>
+                <br />
+
+                <div className="d-flex justify-content-center flex-wrap gap-2">
+                    {Object.values(property.picture?.other || {}).map((img, index) => (
+                        <img
+                            key={index}
+                            src={img}
+                            alt={`Property image ${index + 1}`}
+                            className="rounded"
+                            style={{ width: '265.6px', height: '215.6px', objectFit: 'cover' }}
+                        />
+                    ))}
+                </div>
+
             </section>
             <Box sx={{ borderBottom: 1, borderColor: 'divider', marginTop: 0 }}>
                 <Tabs
@@ -166,10 +234,10 @@ function PropertyDetails() {
                     textColor="primary"
                     indicatorColor="primary"
                     sx={{
-                        backgroundColor: '#f9f9f9',
+                        backgroundColor: '#f8f8f8',
                         '& .MuiTab-root': { color: '#555' },
-                        '& .MuiTab-root.Mui-selected': { color: '#198754', fontWeight: 'bold' },
-                        '& .MuiTabs-indicator': { backgroundColor: '#198754' },
+                        '& .MuiTab-root.Mui-selected': { color: '#188754', fontWeight: 'bold' },
+                        '& .MuiTabs-indicator': { backgroundColor: '#188754' },
                     }}
                     centered
                 >
