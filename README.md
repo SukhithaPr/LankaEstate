@@ -24,6 +24,8 @@ To install and run this project locally, follow these steps:
 3. Install the dependencies:
     ```bash
     npm install
+    ```
+    ```bash
     npm install --legacy-peer-deps
     ```
 
