@@ -7,25 +7,48 @@ function PropertyContact() {
         phone: '',
         message: ''
     });
+    const [submitted, setSubmitted] = useState(false);
 
+    // Handle input change and update form state
     const handleChange = (e) => {
         const { id, value } = e.target;
         setForm((prev) => ({ ...prev, [id]: value }));
     };
 
+    // Handle form submission
     const handleSubmit = () => {
         if (!form.name || !form.email) {
             alert("Please fill in all required fields.");
             return;
         }
+        
+        // Example of phone validation: Ensure it's a number with at least 10 digits
+        const phonePattern = /^[0-9]{10,}$/;
+        if (form.phone && !phonePattern.test(form.phone)) {
+            alert("Please enter a valid phone number.");
+            return;
+        }
+
         console.log("Form Submitted:", form);
+
+        // Show success message and reset form
+        setSubmitted(true);
+        setForm({
+            name: '',
+            email: '',
+            phone: '',
+            message: ''
+        });
     };
 
     return (
-        <div className="d-flex bd-highlight">
-            <div className="w-50 bd-highlight">
+        <div className="d-flex flex-column flex-md-row bd-highlight">
+            <div className="w-100 w-md-50 bd-highlight mb-4 mb-md-0">
                 <h5 className="fw-bold">Contact Agent</h5>
                 <p className="text-muted">Fill in the form below to contact the agent</p>
+                {submitted && <p className="text-success">Your message has been sent successfully!</p>}
+                
+                {/* Name Input */}
                 <div className="mb-3">
                     <input
                         type="text"
@@ -35,8 +58,12 @@ function PropertyContact() {
                         aria-label="Your Name"
                         value={form.name}
                         onChange={handleChange}
+                        required
+                        title="Please enter your full name."
                     />
                 </div>
+
+                {/* Email Input */}
                 <div className="mb-3">
                     <input
                         type="email"
@@ -46,8 +73,12 @@ function PropertyContact() {
                         aria-label="Your Email"
                         value={form.email}
                         onChange={handleChange}
+                        required
+                        title="Please enter a valid email address."
                     />
                 </div>
+
+                {/* Phone Input */}
                 <div className="mb-3">
                     <input
                         type="tel"
@@ -57,8 +88,11 @@ function PropertyContact() {
                         aria-label="Your Phone Number"
                         value={form.phone}
                         onChange={handleChange}
+                        title="Optional, please enter a valid phone number."
                     />
                 </div>
+
+                {/* Message Textarea */}
                 <div className="mb-3">
                     <textarea
                         className="form-control"
@@ -70,6 +104,8 @@ function PropertyContact() {
                         onChange={handleChange}
                     ></textarea>
                 </div>
+
+                {/* Submit Button */}
                 <button
                     type="button"
                     className="btn btn-lg btn-success fs-5"
@@ -81,7 +117,7 @@ function PropertyContact() {
             </div>
 
             {/* Advertiser Information Section */}
-            <div className="w-50 bd-highlight p-3">
+            <div className="w-100 w-md-50 bd-highlight p-3">
                 <h5 className="fw-bold">Advertiser Profile</h5>
                 <div className="d-flex align-items-center">
                     <img

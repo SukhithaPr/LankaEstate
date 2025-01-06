@@ -3,7 +3,7 @@ import Categories from '../components/Categories';
 import Properties from '../components/Properties';
 
 function Sales({ wishlist, onWishlistToggle }) {
-    const [properties, setProperties] = useState([]);
+    const [properties, setProperties] = useState([]); // State to store all properties
     const [filters, setFilters] = useState({
         type: '',
         location: '',
@@ -13,17 +13,17 @@ function Sales({ wishlist, onWishlistToggle }) {
         maxBedrooms: 10,
         startDate: null,
         endDate: null,
-    });
-    const [filteredProperties, setFilteredProperties] = useState([]); 
+    }); // State to store filter criteria
+    const [filteredProperties, setFilteredProperties] = useState([]); // State to store filtered properties
 
     useEffect(() => {
         fetch('/properties.json') 
             .then((response) => response.json())
             .then((data) => {
-                setProperties(data.properties);
+                setProperties(data.properties); // Load properties from JSON file
             })
             .catch((error) => console.error('Error loading properties:', error));
-    }, []);
+    }, []); // Fetch properties on component mount
 
     useEffect(() => {
         const filtered = properties.filter((property) => {
@@ -38,8 +38,8 @@ function Sales({ wishlist, onWishlistToggle }) {
 
             return matchesType && matchesLocation && matchesPrice && matchesBedrooms && matchesDateRange;
         });
-        setFilteredProperties(filtered);
-    }, [filters, properties]);
+        setFilteredProperties(filtered); // Apply filters to properties
+    }, [filters, properties]); // Re-apply filters when filters or properties change
 
     const monthMap = {
         January: 0,
@@ -54,14 +54,14 @@ function Sales({ wishlist, onWishlistToggle }) {
         October: 9,
         November: 10,
         December: 11,
-    };
+    }; // Map month names to numbers
 
     const handleFilterChange = (newFilters) => {
-        setFilters((prevFilters) => ({ ...prevFilters, ...newFilters }));
+        setFilters((prevFilters) => ({ ...prevFilters, ...newFilters })); // Update filters state
     };
 
     const handleSearch = () => {
-        console.log('Applied Filters:', filters);
+        console.log('Applied Filters:', filters); // Log applied filters
     };
 
     return (

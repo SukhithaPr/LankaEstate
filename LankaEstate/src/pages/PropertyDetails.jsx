@@ -9,6 +9,7 @@ import Overview from '../components/Overview';
 import Details from '../components/Details';
 import PropertyContact from '../components/PropertyContact';
 
+// Custom hook to fetch data from a given URL
 function useFetch(url) {
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(true);
@@ -34,6 +35,7 @@ function useFetch(url) {
     return { data, loading, error };
 }
 
+// Custom component for tab panels
 function CustomTabPanel(props) {
     const { children, value, index, ...other } = props;
 
@@ -54,6 +56,7 @@ function CustomTabPanel(props) {
     );
 }
 
+// Function to generate accessibility props for tabs
 function a11yProps(index) {
     return {
         id: `simple-tab-${index}`,
@@ -62,21 +65,21 @@ function a11yProps(index) {
 }
 
 function PropertyDetails() {
-    const { id } = useParams();
-    const { data: properties, loading, error } = useFetch('/properties.json');
-    const [property, setProperty] = useState(null);
-    const [value, setValue] = useState(0);
-    const [open, setOpen] = useState(false);
+    const { id } = useParams(); // Get property ID from URL parameters
+    const { data: properties, loading, error } = useFetch('/properties.json'); // Fetch properties data
+    const [property, setProperty] = useState(null); // State to store selected property
+    const [value, setValue] = useState(0); // State to manage active tab
+    const [open, setOpen] = useState(false); // State to manage modal open/close
 
-    const handleChange = (event, newValue) => setValue(newValue);
-    const handleOpen = () => setOpen(true);
-    const handleClose = () => setOpen(false);
+    const handleChange = (event, newValue) => setValue(newValue); // Handle tab change
+    const handleOpen = () => setOpen(true); // Open modal
+    const handleClose = () => setOpen(false); // Close modal
 
     useEffect(() => {
         if (properties) {
             const propertiesArray = Array.isArray(properties) ? properties : properties.properties;
             const selectedProperty = propertiesArray.find((item) => String(item.id) === String(id));
-            setProperty(selectedProperty || null);
+            setProperty(selectedProperty || null); // Set selected property based on ID
         }
     }, [properties, id]);
 

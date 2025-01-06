@@ -3,12 +3,15 @@ import { Modal, Box, Typography } from '@mui/material';
 import PropTypes from 'prop-types';
 
 function Details({ property }) {
+    // Return a message if property details are not available
     if (!property) return <p>Property details are not available.</p>;
 
+    // State to manage the modal open/close status
     const [open, setOpen] = useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
 
+    // Extract key features from the property object
     const features = property.keyFeatures || [];
 
     return (
@@ -83,7 +86,7 @@ function Details({ property }) {
                             key={index}
                             src={img}
                             alt={`Property image ${index + 1}`}
-                            className="rounded"
+                            className="rounded gallery"
                             style={{
                                 width: '100%',
                                 maxWidth: '200px',

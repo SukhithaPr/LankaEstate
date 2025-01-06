@@ -20,8 +20,8 @@ function Properties({ properties, onWishlistToggle, wishlist }) {
                                 picture={el.picture}
                                 url={el.url}
                                 added={el.added}
-                                isWishlisted={wishlist.some((item) => item.id === el.id)}
-                                onWishlistToggle={onWishlistToggle}
+                                isWishlisted={wishlist.some((item) => item.id === el.id)} // Check if property is in wishlist
+                                onWishlistToggle={onWishlistToggle} // Handle wishlist toggle
                             />
                         </div>
                     ))}

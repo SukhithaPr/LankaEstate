@@ -7,6 +7,7 @@ import { Button, Card } from "react-bootstrap";
 function Categories({ filters, onFilterChange, onSearch }) {
     const [localFilters, setLocalFilters] = useState(filters);
 
+    // Handle input change and update local filters state
     const handleInputChange = (name, value) => {
         const newFilters = {
             ...localFilters,
@@ -15,12 +16,14 @@ function Categories({ filters, onFilterChange, onSearch }) {
         setLocalFilters(newFilters);
     };
 
+    // Handle search button click
     const handleSearchClick = (e) => {
         e.preventDefault();
         onFilterChange(localFilters);
         onSearch();
     };
 
+    // Options for type filter dropdown
     const typeOptions = [
         { value: "", label: "All Types" },
         { value: "House", label: "House" },
@@ -29,6 +32,7 @@ function Categories({ filters, onFilterChange, onSearch }) {
         { value: "Commercial", label: "Commercial" },
     ];
 
+    // Options for location filter dropdown
     const locationOptions = [
         { value: "", label: "All Locations" },
         { value: "Colombo", label: "Colombo" },

@@ -19,11 +19,31 @@ function PropertyCard({
     const navigate = useNavigate();
 
     const handleViewDetails = () => {
-        navigate(`/property/${id}`);
+        navigate(`/property/${id}`); // Navigate to property details page
+    };
+
+    const handleDragStart = (e) => {
+        e.dataTransfer.setData("property", JSON.stringify({
+            id,
+            type,
+            title,
+            bedrooms,
+            price,
+            tenure,
+            description,
+            location,
+            picture,
+            url,
+            added,
+        })); // Handle drag start event
     };
 
     return (
-        <div className="card h-100 shadow-sm border-1 position-relative">
+        <div
+            className="card h-100 shadow-sm border-1 position-relative"
+            draggable="true"
+            onDragStart={handleDragStart}
+        >
             {/* Heart Icon */}
             <button
                 onClick={() => onWishlistToggle({ id, type, title, bedrooms, price, tenure, description, location, picture, url, added })}

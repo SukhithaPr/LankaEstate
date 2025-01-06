@@ -16,6 +16,7 @@ function Rentals({ wishlist, onWishlistToggle }) {
     });
     const [filteredProperties, setFilteredProperties] = useState([]); 
 
+    // Fetch properties data from JSON file
     useEffect(() => {
         fetch('/properties.json') 
             .then((response) => response.json())
@@ -25,6 +26,7 @@ function Rentals({ wishlist, onWishlistToggle }) {
             .catch((error) => console.error('Error loading properties:', error));
     }, []);
 
+    // Filter properties based on selected filters
     useEffect(() => {
         const filtered = properties.filter((property) => {
             const matchesType = filters.type ? property.type === filters.type : true;
@@ -41,6 +43,7 @@ function Rentals({ wishlist, onWishlistToggle }) {
         setFilteredProperties(filtered);
     }, [filters, properties]);
 
+    // Map month names to their respective numbers
     const monthMap = {
         January: 0,
         February: 1,
@@ -56,10 +59,12 @@ function Rentals({ wishlist, onWishlistToggle }) {
         December: 11,
     };
 
+    // Handle filter changes
     const handleFilterChange = (newFilters) => {
         setFilters((prevFilters) => ({ ...prevFilters, ...newFilters }));
     };
 
+    // Handle search button click
     const handleSearch = () => {
         console.log('Applied Filters:', filters);
     };

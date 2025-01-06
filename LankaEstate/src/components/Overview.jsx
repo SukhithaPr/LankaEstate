@@ -1,4 +1,3 @@
-// Overview.jsx
 import React from 'react';
 import { IoIosBed } from "react-icons/io";
 import { MdBathroom } from "react-icons/md";
@@ -10,7 +9,7 @@ function Overview({ property }) {
 
     return (
         <>
-            <p>{property.description2}</p>
+            <p className="text-justify">{property.description2}</p>
             <hr />
             <div className='d-flex flex-column flex-md-row justify-content-between'>
                 <div className='Info'>
@@ -35,6 +34,7 @@ function Overview({ property }) {
                     </div>
                     <hr />
                     <div className='d-flex flex-wrap justify-content-between gap-3'>
+                        {/* Property Type */}
                         <div className='d-flex flex-column'>
                             <p className="text-muted" style={{ fontSize: '0.8rem' }}>Property Type</p>
                             <div className='d-flex gap-2'>
@@ -42,6 +42,7 @@ function Overview({ property }) {
                                 <p className='fs-6'>{property.type}</p>
                             </div>
                         </div>
+                        {/* Bedrooms */}
                         <div className='d-flex flex-column'>
                             <p className="text-muted" style={{ fontSize: '0.8rem' }}>Bedrooms</p>
                             <div className='d-flex gap-2'>
@@ -49,6 +50,7 @@ function Overview({ property }) {
                                 <p className='fs-6'>{property.bedrooms}</p>
                             </div>
                         </div>
+                        {/* Bathrooms */}
                         <div className='d-flex flex-column'>
                             <p className="text-muted" style={{ fontSize: '0.8rem' }}>Bathroom</p>
                             <div className='d-flex gap-2'>
@@ -56,12 +58,14 @@ function Overview({ property }) {
                                 <p className='fs-6'>{property.bathrooms}</p>
                             </div>
                         </div>
+                        {/* Tenure */}
                         <div className='d-flex flex-column'>
                             <p className="text-muted" style={{ fontSize: '0.8rem' }}>Tenure</p>
                             <div className='d-flex gap-2'>
                                 <p className='fs-6'>{property.tenure}</p>
                             </div>
                         </div>
+                        {/* Size */}
                         <div className='d-flex flex-column'>
                             <p className="text-muted" style={{ fontSize: '0.8rem' }}>Size</p>
                             <div className='d-flex gap-2'>
@@ -71,14 +75,13 @@ function Overview({ property }) {
                         </div>
                     </div>
                 </div>
-                <div className="mt-4 mt-md-0">
+                <div className="map mt-4 mt-md-0">
                     {property.address ? (
                         <iframe
                             src={`https://www.google.com/maps?q=${encodeURIComponent(property.address)}&output=embed`}
                             title="Google Map"
-                            width="600"
-                            height="230"
-                            style={{ borderRadius: 5 }}
+                            className="w-100"
+                            style={{ borderRadius: 5, height: '230px' }}
                             allowFullScreen
                             loading="lazy"
                         ></iframe>
