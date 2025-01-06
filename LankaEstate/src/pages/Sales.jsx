@@ -3,22 +3,21 @@ import Categories from '../components/Categories';
 import Properties from '../components/Properties';
 
 function Sales({ wishlist, onWishlistToggle }) {
-    const [properties, setProperties] = useState([]); // All properties
+    const [properties, setProperties] = useState([]);
     const [filters, setFilters] = useState({
         type: '',
         location: '',
-        maxPrice: null, // Updated to handle null instead of Infinity
+        maxPrice: null, 
         minPrice: 0,
         minBedrooms: 0,
-        maxBedrooms: 10, // Added maxBedrooms filter
+        maxBedrooms: 10,
         startDate: null,
         endDate: null,
     });
-    const [filteredProperties, setFilteredProperties] = useState([]); // Filtered properties
+    const [filteredProperties, setFilteredProperties] = useState([]); 
 
-    // Fetch properties data
     useEffect(() => {
-        fetch('/properties.json') // Adjust path if necessary
+        fetch('/properties.json') 
             .then((response) => response.json())
             .then((data) => {
                 setProperties(data.properties);
@@ -26,27 +25,41 @@ function Sales({ wishlist, onWishlistToggle }) {
             .catch((error) => console.error('Error loading properties:', error));
     }, []);
 
-    // Apply filters when filters or properties change
     useEffect(() => {
         const filtered = properties.filter((property) => {
             const matchesType = filters.type ? property.type === filters.type : true;
             const matchesLocation = filters.location ? property.location.city === filters.location : true;
             const matchesPrice = (property.price >= filters.minPrice) && (filters.maxPrice ? property.price <= filters.maxPrice : true);
             const matchesBedrooms = (property.bedrooms >= filters.minBedrooms) && (property.bedrooms <= filters.maxBedrooms);
-            const matchesDateRange = (!filters.startDate || new Date(property.added.year, property.added.month) >= new Date(filters.startDate)) &&
-                                      (!filters.endDate || new Date(property.added.year, property.added.month) <= new Date(filters.endDate));
+            const matchesDateRange = (!filters.startDate ||
+                new Date(property.added.year, monthMap[property.added.month], property.added.day) >= new Date(filters.startDate)) &&
+                (!filters.endDate ||
+                    new Date(property.added.year, monthMap[property.added.month], property.added.day) <= new Date(filters.endDate));
 
             return matchesType && matchesLocation && matchesPrice && matchesBedrooms && matchesDateRange;
         });
         setFilteredProperties(filtered);
     }, [filters, properties]);
 
-    // Handle filter changes from Categories component
+    const monthMap = {
+        January: 0,
+        February: 1,
+        March: 2,
+        April: 3,
+        May: 4,
+        June: 5,
+        July: 6,
+        August: 7,
+        September: 8,
+        October: 9,
+        November: 10,
+        December: 11,
+    };
+
     const handleFilterChange = (newFilters) => {
         setFilters((prevFilters) => ({ ...prevFilters, ...newFilters }));
     };
 
-    // Handle Search (log current filters)
     const handleSearch = () => {
         console.log('Applied Filters:', filters);
     };
@@ -57,8 +70,8 @@ function Sales({ wishlist, onWishlistToggle }) {
             <Categories filters={filters} onFilterChange={handleFilterChange} onSearch={handleSearch} />
             <Properties
                 properties={filteredProperties}
-                wishlist={wishlist} // Pass the wishlist state
-                onWishlistToggle={onWishlistToggle} // Pass the toggle function
+                wishlist={wishlist}
+                onWishlistToggle={onWishlistToggle}
             />
         </div>
     );
