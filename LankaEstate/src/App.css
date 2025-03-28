@@ -44,24 +44,8 @@
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
     z-index: 1050;
+    box-shadow: -2px 0 15px rgba(0, 0, 0, 0.1);
 }
-
-.wishlist-drawer.show {
-    transform: translateX(0);
-}
-
-.wishlist-header {
-    border-bottom: 1px solid #ccc;
-    background-color: #f8f9fa;
-}
-
-.wishlist-content {
-    overflow-y: auto;
-    /* Ensure the content is scrollable */
-    max-height: calc(100% - 60px);
-    /* Adjust height to prevent overflow from the header */
-}
-
 
 .wishlist-drawer.show {
     right: 0;
