@@ -56,8 +56,10 @@
 }
 
 .wishlist-content {
-    overflow-y: auto; /* Ensure the content is scrollable */
-    max-height: calc(100% - 60px); /* Adjust height to prevent overflow from the header */
+    overflow-y: auto;
+    /* Ensure the content is scrollable */
+    max-height: calc(100% - 60px);
+    /* Adjust height to prevent overflow from the header */
 }
 
 
